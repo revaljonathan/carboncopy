@@ -3,7 +3,7 @@
 cliphist list | fzf \
     --delimiter='\t' \
     --with-nth=2.. \
-      --color=base16,fg+:red,bg+:-1,border:bright-black \
+    --color=base16,fg+:200,bg+:-1,border:bright-black,pointer:200 \
     --layout=reverse \
     --preview='id={1}; line=$(cliphist list | awk -v i="$id" "\$1==i" | cut -f2-)
         case "$line" in

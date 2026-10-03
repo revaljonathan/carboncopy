@@ -85,6 +85,12 @@ hl(0, "DiffChange", { fg = cc.secondary })
 hl(0, "DiffDelete", { fg = cc.error })
 hl(0, "DiffText",   { fg = cc.syn_func })
 
+-- snacks
+hl(0, "SnacksDashboardHeader", { fg = cc.primary, bold = true })
+hl(0, "SnacksDashboardDesc",   { fg = cc.fg })                   
+hl(0, "SnacksDashboardIcon",   { fg = cc.syn_constant })            
+hl(0, "SnacksDashboardKey",    { fg = cc.syn_constant })         
+
 -- Syntax Highlighting
 local c = {
     comment  = cc.syn_comment,

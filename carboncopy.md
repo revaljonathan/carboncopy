@@ -40,11 +40,11 @@ bg -> #161616
 
 ## Greyscales for outlines, etc
 
-Outline0 -> #666666
+Outline0 -> #8d8d8d
 
-Outline1 -> #595959
+Outline1 -> #6f6f6f
 
-Outline2 -> #4d4d4d
+Outline2 -> #525252
 
 Outline3 -> #393939
 

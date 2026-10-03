@@ -36,7 +36,7 @@
     ],
 
 "custom/caf-waybar": {
-    "exec": "pgrep sleep.sh >/dev/null || echo \"Caffeinated\"",
+    "exec": "pgrep sleep.sh >/dev/null && echo 'Sleepy' || echo 'Caffeinated'",
     "signal": 13,
     "format": "{}",
     "tooltip": false

@@ -6,8 +6,8 @@ border-size=1
 border-radius=0
 
 
-width=350
-height=150
+width=450
+height=250
 max-visible=5
 
 font=IBM Plex Sans 12
@@ -32,7 +32,7 @@ layer=top
 format=<span foreground='#dde1e6'>%a</span>\n<b>%s</b>\n<span>%b</span>
 background-color=#262626
 text-color=#f2f4f8
-border-color=#595959
+border-color=#525252
 progress-color=over #262626
 
 [urgency=high]

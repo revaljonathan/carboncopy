@@ -14,8 +14,8 @@ configuration {
     base:     #161616;
     text:     #f2f4f8;
     primary: #ee5396;
-    border: #595959;
-    outline: #666666;
+    border: #393939;
+    outline: #525252;
 
     separatorcolor: transparent;
     background-color: transparent;
