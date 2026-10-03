@@ -1,0 +1,87 @@
+configuration {
+    modi:                "drun";
+    show-icons:          false;
+    drun-display-format: "{name}";
+    display-drun:        "run:";
+    matching: "fuzzy";
+    case-sensitive: false;
+    disable-history:     false;
+    hide-scrollbar:      true;
+    font:                "IBM Plex Sans 12";
+}
+
+* {
+    base:     #161616;
+    text:     #f2f4f8;
+    primary: #ee5396;
+    border: #595959;
+    outline: #666666;
+
+    separatorcolor: transparent;
+    background-color: transparent;
+    text-color:       @text;
+    margin:           0;
+    padding:          0;
+    spacing:          0;
+}
+
+window {
+    location:         center;
+    anchor:           center;
+    width:            400;
+    background-color: @base;
+    border:           1;
+    border-color:     @border;
+    padding:          6px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  6px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    spacing:  6px;
+}
+
+prompt {
+    text-color: @primary;
+}
+
+entry {
+    text-color:        @text;
+    placeholder:       "";
+    placeholder-color: @outline;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    scrollbar:    false;
+    fixed-height: false;
+    spacing:      12px;
+    margin:       2px 0 0 0;
+}
+
+element {
+    padding:          2px 0 2px 48px;
+    background-color: transparent;
+    text-color:       @text;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @outline;
+}
+
+element selected.normal {
+    background-color: transparent;
+    text-color:       @primary;
+}
+
+element-text {
+    text-color: inherit;
+    highlight:  none;
+}

@@ -1,0 +1,39 @@
+anchor=top-right
+
+margin=10
+padding=10
+border-size=1
+border-radius=0
+
+
+width=350
+height=150
+max-visible=5
+
+font=IBM Plex Sans 12
+
+text-alignment=left
+max-icon-size=48
+icons=1
+icon-path=/usr/share/icons/hicolor
+
+default-timeout=5000
+ignore-timeout=0
+group-by=app-name
+
+sort=-time
+
+on-button-left=invoke-default-action
+on-button-middle=dismiss
+on-button-right=dismiss-all
+on-touch=invoke-default-action
+
+layer=top
+format=<span foreground='#dde1e6'>%a</span>\n<b>%s</b>\n<span>%b</span>
+background-color=#262626
+text-color=#f2f4f8
+border-color=#595959
+progress-color=over #262626
+
+[urgency=high]
+border-color=#ee5396

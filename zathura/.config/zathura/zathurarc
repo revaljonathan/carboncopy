@@ -1,0 +1,44 @@
+set default-fg                rgba(242,244,248,1)
+set default-bg                rgba(22,22,22,1)
+
+set completion-bg             rgba(38,38,38,1)
+set completion-fg             rgba(242,244,248,1)
+set completion-highlight-bg   rgba(190,149,255,1)
+set completion-highlight-fg   rgba(22,22,22,1)
+set completion-group-bg       rgba(31,31,31,1)
+set completion-group-fg       rgba(230,237,243,1)
+
+set statusbar-fg              rgba(242,244,248,1)
+set statusbar-bg              rgba(31,31,31,1)
+set inputbar-fg               rgba(242,244,248,1)
+set inputbar-bg               rgba(22,22,22,1)
+
+set notification-bg           rgba(22,22,22,1)
+set notification-fg           rgba(242,244,248,1)
+set notification-error-bg     rgba(22,22,22,1)
+set notification-error-fg     rgba(238,83,150,1)
+set notification-warning-bg   rgba(22,22,22,1)
+set notification-warning-fg   rgba(226,132,19,1)
+
+set recolor                   "true"
+set recolor-lightcolor        rgba(22,22,22,1)
+set recolor-darkcolor         rgba(242,244,248,1)
+set recolor-keephue           "false"
+set recolor-reverse-video     "false"
+
+set index-fg                  rgba(242,244,248,1)
+set index-bg                  rgba(22,22,22,1)
+set index-active-fg           rgba(22,22,22,1)
+set index-active-bg           rgba(120,169,255,1)
+
+set render-loading-bg         rgba(22,22,22,1)
+set render-loading-fg         rgba(242,244,248,1)
+
+set highlight-color           rgba(190,149,255,0.3)
+set highlight-fg              rgba(242,244,248,1)
+set highlight-active-color    rgba(61,219,217,0.3)
+
+set recolor-reverse-video "false"
+set selection-clipboard clipboard
+
+map y copy-selected

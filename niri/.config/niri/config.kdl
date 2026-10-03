@@ -1,0 +1,15 @@
+include "~/.config/niri/colors.kdl"
+include "~/.config/niri/inputs.kdl"
+include "~/.config/niri/outputs.kdl"
+include "~/.config/niri/layout.kdl"
+include "~/.config/niri/startup.kdl"
+include "~/.config/niri/rules.kdl"
+include "~/.config/niri/binds.kdl"
+
+prefer-no-csd
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+screenshot-path "~/Pictures/ss/%d-%m-%Y_%H:%M.png"
