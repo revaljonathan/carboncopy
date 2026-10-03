@@ -48,8 +48,8 @@ Outline2 -> #4d4d4d
 
 Outline3 -> #393939
 
-Outline4 -> #1f1f1f
+Outline4 -> #262626
 
-Outline5 -> #262626
+Outline5 -> #1f1f1f
 
 

@@ -238,7 +238,8 @@ return {
     -- ── File explorer ──────────────────────────────────────────────────────
     {
         "nvim-tree/nvim-tree.lua",
-        cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+        lazy  = false,
+        dependencies = { "nvim-tree/nvim-web-devicons" },
         init = function()
             -- must disable netrw before nvim-tree loads
             vim.g.loaded_netrw       = 1
@@ -253,6 +254,25 @@ return {
             })
 
             vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
+
+            -- Auto-open tree when nvim is launched with a directory
+            local function open_nvim_tree(data)
+                local directory = vim.fn.isdirectory(data.file) == 1
+                if not directory then return end
+
+                -- create a new, empty buffer
+                vim.cmd.enew()
+                -- wipe the directory buffer
+                vim.cmd.bw(data.buf)
+                -- change to the directory
+                vim.cmd.cd(data.file)
+                -- open the tree
+                require("nvim-tree.api").tree.open()
+            end
+
+            vim.api.nvim_create_autocmd("VimEnter", {
+                callback = open_nvim_tree,
+            })
 
             local cc_ok, cc = pcall(require, "carboncopy")
             if cc_ok and cc.bg then
