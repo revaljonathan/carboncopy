@@ -11,7 +11,7 @@ thx ibm for most of the pallete, will steal again
 
 #fa4d56 -> red, for error
 
-#ee5396 -> pink, primary accent
+#ff7eb6 -> pink, primary accent
 
 #cff27e -> lime green, correct/succeed/etc
 
@@ -30,7 +30,6 @@ thx ibm for most of the pallete, will steal again
 
 #ff8389
 
-#ff7eb6
 
 #e3ff9e
 

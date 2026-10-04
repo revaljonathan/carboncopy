@@ -113,6 +113,7 @@
         "tooltip-format": "Network Information\n\nSSID  : {essid}\nIP    : {ipaddr}\nBand  : {frequency} MHz\nSignal: {signalStrength}%   \nvia   : {ifname}",
         "format-linked": "{ifname} (No IP) 󰊗",
         "format-disconnected": "Net error",
+        "on-click": "footclient --class=clip impala",
     },
 
     "pulseaudio": {

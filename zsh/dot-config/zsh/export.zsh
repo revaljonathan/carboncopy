@@ -1,7 +1,7 @@
 # export GTK_THEME=adw-gtk3-dark
 export LS_COLORS=""
 export COLORTERM=truecolor
-export BAT_THEME="Catppuccin Mocha"
+export BAT_THEME="base16"
 export "MICRO_TRUECOLOR=1"
 export EZA_CONFIG_DIR="$HOME/.config/eza/"
 export EDITOR=nvim
