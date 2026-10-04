@@ -55,8 +55,7 @@ window#waybar {
 #window,
 #temperature,
 #network,
-#mpris,
-#custom-caf-waybar {
+#mpris     {
     color: @fg;
     padding: 0 4px;
 }
@@ -77,6 +76,6 @@ window#waybar {
     color: @outline;
 }
 
-#temperature {
+#custom-caf-waybar {
     margin-right: 8px;
 }

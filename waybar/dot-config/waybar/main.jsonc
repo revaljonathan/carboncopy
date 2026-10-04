@@ -1,8 +1,8 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
-    "spacing": 6, // Gaps between modules (4px)
+    "layer": "top", 
+    "position": "top", 
+    "height": 28,
+    "spacing": 6, 
     "margin-top": 0,
     "margin-bottom": 0,
 
@@ -10,15 +10,17 @@
         "niri/workspaces",
         "custom/sep",
         "niri/window",
+        "custom/sep"
+    ],
+
+    "modules-center": [
+        "custom/weather",
         "custom/sep",
+        "clock"
     ],
 
     "modules-right": [
-        "clock",
-        "custom/sep",
         "battery",
-        "custom/sep",
-        "custom/caf-waybar",
         "custom/sep",
         "pulseaudio",
         "custom/sep",
@@ -28,11 +30,13 @@
         "custom/sep",
         "network",
         "custom/sep",
-      "mpris",
-       "custom/sep",
-        "memory",
-        "custom/sep",
-        "temperature",
+        "custom/caf-waybar"
+        // "custom/sep",
+        // "mpris",
+       //  "custom/sep",
+      //   "memory",
+     //   "custom/sep",
+     //   "temperature",
     ],
 
 "custom/caf-waybar": {
@@ -46,8 +50,14 @@
     "interval": "once",
     "tooltip": false
 },
+"custom/weather": {
+  "format": "{}",
+    "interval": 900,
+    "exec": "curl -s 'wttr.in/?format=j1' | jq -r '.current_condition[0] | \"\\(.weatherDesc[0].value), \\(.temp_C)°C\"'",
+    "tooltip": false
+},
 "niri/window": {
-  "max-length": 55
+  "max-length": 30
 },
 "niri/workspaces": {
     "on-click": "activate",
@@ -64,10 +74,7 @@
 
     "clock": {
         "format": "{:%a, %d %b %H:%M}",
-        "format-alt": "{:%H:%M}",
     },
-
-
 
     "memory": {
         "format": "Mem: {used:0.1f}GiB",

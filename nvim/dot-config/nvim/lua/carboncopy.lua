@@ -8,8 +8,8 @@ M.secondary               = "#3ddbd9"
 M.tertiary                = "#be95ff"
 M.error                   = "#fa4d56"
 
-M.cursorline_bg           = "#262626"
-M.darker                  = "#1f1f1f"
+M.cursorline_bg           = "#393939"
+M.darker                  = "#262626"
 M.cursorline_fg           = "#dde1e6"
 
 M.visual_bg               = "#393939"

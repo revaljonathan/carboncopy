@@ -6,11 +6,11 @@ border-size=1
 border-radius=0
 
 
-width=450
-height=250
+width=375
+height=175
 max-visible=5
 
-font=IBM Plex Sans 12
+font=IBM Plex Sans 11
 
 text-alignment=left
 max-icon-size=48

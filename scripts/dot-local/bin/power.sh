@@ -2,7 +2,7 @@
 
 options="Lock\nSuspend\nReboot\nShutdown\nLogout"
 
-selected=$(echo -e "$options" |  rofi -i -show -dmenu)
+selected=$(echo -e "$options" |  fuzzel  --dmenu)
 
 case "$selected" in
     "Lock")

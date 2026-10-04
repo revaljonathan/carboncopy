@@ -1,29 +1,35 @@
 # Carboncopy
 
-inspired by oxocarbon, pretty much a fork of it
+thx ibm for most of the pallete, will steal again
 
 ## FG and BG
-fg -> #f2f4f8
+#f2f4f8 -> main foreground color
 
-bg -> #161616
+#161616 -> main background color
 
 ## Regular
-#ee5396
 
-#cff27e
+#fa4d56 -> red, for error
 
-#E28413
+#ee5396 -> pink, primary accent
 
-#78a9ff
+#cff27e -> lime green, correct/succeed/etc
 
-#be95ff
+#e28413 -> peach, or amber, whatever. used for warning
 
-#3ddbd9
+#78a9ff -> blue, important. tertiary/secondary
 
-#e6edf3
+#be95ff -> purple, secondary/tertiary
+
+#3ddbd9 -> cyan, if you're feeling fancy, can also slot as accent
+
+#e6edf3 -> off white
 
 
-## Bright variant
+## Bright variant (its brighter than regular)
+
+#ff8389
+
 #ff7eb6
 
 #e3ff9e
@@ -40,16 +46,10 @@ bg -> #161616
 
 ## Greyscales for outlines, etc
 
-Outline0 -> #8d8d8d
+#8d8d8d -> Outline0, the brightest, i like it as comment and unselected entries
 
-Outline1 -> #6f6f6f
+#525252 -> Outline1, used for muted stuff
 
-Outline2 -> #525252
+#393939 -> Outline2, used for unasumming border color, also used for selected text background (visual mode in nvim, etc)
 
-Outline3 -> #393939
-
-Outline4 -> #262626
-
-Outline5 -> #1f1f1f
-
-
+#262626 -> Outline3, i usually use this for secondary background, notifications etc

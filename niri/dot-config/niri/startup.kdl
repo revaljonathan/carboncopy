@@ -1,6 +1,5 @@
-spawn-at-startup "awww-daemon"
+spawn-sh-at-startup "swaybg -m fill -i $(cat ~/.config/wallpaper)"
 spawn-at-startup "foot" "--server"
-spawn-sh-at-startup "awww img $(cat ~/.config/wallpaper)"
 spawn-at-startup "mako"
 spawn-sh-at-startup "gammastep -l -6.2:106.8 -t 5500:3500"
 spawn-sh-at-startup "waybar -c ~/.config/waybar/main.jsonc -s ~/.config/waybar/main.css"

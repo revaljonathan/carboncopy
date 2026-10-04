@@ -13,7 +13,7 @@ PREDEFINED=(
     "Catppuccin"
 )
 
-CHOICE=$(printf '%s\n' "${PREDEFINED[@]}" | rofi -i -dmenu)
+CHOICE=$(printf '%s\n' "${PREDEFINED[@]}" | fuzzel --dmenu)
 [ -z "$CHOICE" ] && exit 0
 
 urlencode() {
