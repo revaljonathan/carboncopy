@@ -12,6 +12,7 @@ export MANPAGER="nvim +Man!"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH=$HOME/.go
 export PATH="$GOPATH/bin:$PATH"
+export PATH="$HOME/.local/opt/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH=$PATH:/home/reval/.spicetify
 export PATH=~/.npm-global/bin:$PATH
