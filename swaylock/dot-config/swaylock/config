@@ -30,15 +30,15 @@ line-ver-color=00000000
 line-wrong-color=00000000
 
 ring-color=393939
-ring-clear-color=e3ff9e
+ring-clear-color=cff27e
 ring-caps-lock-color=595959
-ring-ver-color=e3ff9e
+ring-ver-color=cff27e
 ring-wrong-color=fa4d56
 
 separator-color=00000000
 
 text-color=f2f4f8
-text-clear-color=e3ff9e
+text-clear-color=cff27e
 text-caps-lock-color=595959
-text-ver-color=e3ff9e
+text-ver-color=cff27e
 text-wrong-color=fa4d56
