@@ -1,5 +1,6 @@
 @import "colors.css";
 
+
 * {
     font-family: "IBM Plex Sans";
     font-size: 14px;
@@ -44,7 +45,6 @@ window#waybar {
 
 #custom-sep {
     color: @outline;
-    margin: 0 0px;
 }
 
 #clock,
@@ -53,11 +53,14 @@ window#waybar {
 #backlight,
 #memory,
 #window,
+#custom-weather,
 #temperature,
 #network,
+#custom-caf-waybar,
+#tray,
 #mpris     {
     color: @fg;
-    padding: 0 4px;
+    padding: 0 6px;
 }
 
 #mpris.paused {
@@ -76,6 +79,6 @@ window#waybar {
     color: @outline;
 }
 
-#custom-caf-waybar {
+#temperature {
     margin-right: 8px;
 }

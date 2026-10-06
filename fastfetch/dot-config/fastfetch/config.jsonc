@@ -61,37 +61,37 @@
         {
             "type": "disk",
             "key": "Disk:     ",
-            "keyColor": "blue"
+            "keyColor": "magenta"
         },
         {
             "type": "brightness",
             "key": "Backlight:",
-            "keyColor": "blue"
+            "keyColor": "magenta"
         },
         {
             "type": "battery",
             "key": "Battery:  ",
-            "keyColor": "blue"
+            "keyColor": "magenta"
         },
         {
             "type": "terminal",
             "key": "Term:     ",
-            "keyColor": "blue"
+            "keyColor": "magenta"
         },
         {
             "type": "font",
             "key": "Font:     ",
-            "keyColor": "blue"
+            "keyColor": "magenta"
         },
         {
             "type": "terminalfont",
             "key": "Font:     ",
-            "keyColor": "blue"
+            "keyColor": "magenta"
         },
         {
             "type": "shell",
             "key": "Shell:    ",
-            "keyColor": "blue"
+            "keyColor": "magenta"
         },
         {
             "type": "host",

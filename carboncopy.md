@@ -30,7 +30,6 @@ thx ibm for most of the pallete, will steal again
 
 #ff8389
 
-
 #e3ff9e
 
 #ffb066

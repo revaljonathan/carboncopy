@@ -2,15 +2,15 @@
     "layer": "top", 
     "position": "top", 
     "height": 28,
-    "spacing": 6, 
+    "spacing": 4, 
     "margin-top": 0,
     "margin-bottom": 0,
 
     "modules-left": [
         "niri/workspaces",
+        "tray",
         "custom/sep",
         "niri/window",
-        "custom/sep"
     ],
 
     "modules-center": [
@@ -26,17 +26,15 @@
         "custom/sep",
         "pulseaudio#microphone",
         "custom/sep",
-        "backlight",
-        "custom/sep",
         "network",
         "custom/sep",
-        "custom/caf-waybar"
+        "custom/caf-waybar",
         // "custom/sep",
         // "mpris",
-       //  "custom/sep",
-      //   "memory",
-     //   "custom/sep",
-     //   "temperature",
+        "custom/sep",
+        "memory",
+       "custom/sep",
+       "temperature"
     ],
 
 "custom/caf-waybar": {
@@ -45,6 +43,13 @@
     "format": "{}",
     "tooltip": false
 }, 
+
+"tray": {
+    "icon-size": 13,
+    "spacing": 10,
+    "show-passive-items": false
+},
+
 "custom/sep": {
   "format": "|",
     "interval": "once",
@@ -108,7 +113,7 @@
     },
 
     "network": {
-        "format-wifi": "Net: {essid} as {ipaddr}",
+        "format-wifi": "Net: {essid}",
         "format-ethernet": "Net: {cidr}",
         "tooltip-format": "Network Information\n\nSSID  : {essid}\nIP    : {ipaddr}\nBand  : {frequency} MHz\nSignal: {signalStrength}%   \nvia   : {ifname}",
         "format-linked": "{ifname} (No IP) 󰊗",

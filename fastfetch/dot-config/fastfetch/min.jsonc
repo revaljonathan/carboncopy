@@ -43,7 +43,7 @@
             "type": "command",
             "key": "WM:     ",
             "format": "",
-             "text": "echo $XDG_CURRENT_DESKTOP :D",
+             "text": "echo $XDG_CURRENT_DESKTOP",
             "keyColor": "yellow"
         },
         {
@@ -65,7 +65,7 @@
         {
             "type": "uptime",
             "key": "Uptime: ",
-            "keyColor": "red"
+            "keyColor": "@200"
         }
     ]
 }
