@@ -1,6 +1,5 @@
 @import "colors.css";
 
-
 * {
     font-family: "IBM Plex Sans";
     font-size: 14px;
@@ -60,7 +59,7 @@ window#waybar {
 #tray,
 #mpris     {
     color: @fg;
-    padding: 0 6px;
+    padding: 0 4px;
 }
 
 #mpris.paused {

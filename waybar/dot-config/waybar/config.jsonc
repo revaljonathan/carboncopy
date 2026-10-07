@@ -83,6 +83,7 @@
 
     "memory": {
         "format": "Mem: {used:0.1f}GiB",
+        "tooltip": false
     },
 
     "temperature": {
@@ -90,6 +91,7 @@
         "input-filename": "temp1_input",
         "critical-threshold": 80,
         "format": "Temp: {temperatureC}°C",
+        "tooltip": false
     },
 
     "backlight": {

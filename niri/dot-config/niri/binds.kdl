@@ -9,7 +9,7 @@ binds {
 
     Super+V { spawn-sh "footclient --class=clip ~/.local/bin/clip.sh"; }
     super+d { spawn-sh "fuzzel"; }
-    super+e { spawn "rofimoji"; }
+    super+e { spawn "rofimoji" "--selector" "fuzzel" "--promp" ">  " "--action" "copy" "--skin-tone" "neutral"; }
     super+P { spawn-sh "~/.local/bin/power.sh"; }
     super+Z hotkey-overlay-title="wallpaper" { spawn-sh "footclient --class=clip ~/.local/bin/wall.sh"; }
     super+s { spawn-sh "~/.local/bin/browse.sh"; }
