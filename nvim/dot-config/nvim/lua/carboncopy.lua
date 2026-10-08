@@ -23,7 +23,7 @@ M.telescope_selection_fg  = "#f2f4f8"
 
 M.tree_folder             = "#78a9ff"
 M.tree_folder_open        = "#be95ff"
-M.tree_indent_marker      = "#4d4d4d"
+M.tree_indent_marker      = "#525252"
 M.tree_root               = "#3ddbd9"
 
 M.branch                  = "#cff27e"

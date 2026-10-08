@@ -26,7 +26,9 @@ thx ibm for most of the pallete, will steal again
 #e6edf3 -> off white
 
 
-## Bright variant (its brighter than regular)
+## another color variants (can be darker or lighter)
+
+#ee5396
 
 #ff8389
 
