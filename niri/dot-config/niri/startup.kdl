@@ -1,6 +1,7 @@
 spawn-sh-at-startup "swaybg -m fill -i $(cat ~/.config/wallpaper)"
 spawn-at-startup "foot" "--server"
 spawn-at-startup "mako"
+spawn-at-startup "lxpolkit"
 spawn-at-startup "waybar"
 spawn-sh-at-startup "gammastep -l -6.2:106.8 -t 5500:3500"
 spawn-at-startup "~/.local/bin/sleep.sh"

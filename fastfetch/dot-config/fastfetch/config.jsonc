@@ -4,15 +4,12 @@
         "type": "auto",
         "source": "arch",
         "position": "left",
-        // "width": 15,
-        // "height": 4,
         "padding": {
             "top": 0,
             "left": 0,
             "right": 4,
             "bottom": 0
         },
-        // The color block must be INSIDE the logo object
         "color": {
             "1": "yellow",
             "2": "yellow"

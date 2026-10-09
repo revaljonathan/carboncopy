@@ -5,20 +5,13 @@ alias i='sudo pacman -Syu'
 alias s='yay -Ss'
 alias clean='paccache -rk 1 && yay -Yc'
 alias pacnews='arch_news_check'
-alias upgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias zshnew='source ~/.zshrc'
 alias locai='ollama serve && ollama'
 alias pw='pass.py'
-alias mount_ssd='sudo mount -t ntfs3 UUID=662C415F2C412B7F ~/media/ssd'
-alias unmount_ssd='sudo umount ~/media/ssd'
-
 alias sn='shutdown now'
 alias sp='systemctl suspend'
 alias rb='reboot'
 
-alias turbon='echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && sleep 1 && checktur'
-alias turboff='echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && sleep 1 && checktur'
-alias checktur='echo "Turbo boost: $(if [ $(cat /sys/devices/system/cpu/intel_pstate/no_turbo) -eq 0 ]; then echo "ON"; else echo "OFF"; fi)"'
 alias fan="watch -n 1 'sensors | grep fan'"
 
 alias gs='la && git status'
@@ -65,11 +58,8 @@ alias grep='rg --color=auto --line-number --smart-case'
 
 alias clock='tty-clock -s -c -C 4'
 alias ff='fastfetch'
-alias btw='ff -c ~/.config/fastfetch/min.jsonc'
+alias ffs='ff -c ~/.config/fastfetch/min.jsonc'
 alias dw='dysk'
 
 alias aq='asciiquarium'
-alias pokrand='krabby random | sed '1d''
 alias plis='sudo'
-alias drizzle='python3 ~/.local/bin/drizzle.py'
-
