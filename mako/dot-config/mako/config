@@ -32,7 +32,7 @@ layer=top
 format=<span foreground='#8d8d8d'>%a</span>\n<b>%s</b>\n<span>%b</span>
 background-color=#262626
 text-color=#f2f4f8
-border-color=#8d8d8d
+border-color=#525252
 progress-color=over #262626
 
 [urgency=high]
