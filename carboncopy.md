@@ -1,55 +1,49 @@
 # Carboncopy
 
-thx ibm for most of the pallete, will steal again
+thx ibm for most of the palettes, will steal again
 
-## FG and BG
-#f2f4f8 -> main foreground color
-
-#161616 -> main background color
-
-## Regular
+## The palettes
 
 #fa4d56 -> red, for error
 
+#ff8389 -> lighter red
+
 #ff7eb6 -> pink, primary accent
+
+#ee5396 -> stronger pink
 
 #cff27e -> lime green, correct/succeed/etc
 
+#e3ff9e -> lighter lime green
+
 #e28413 -> peach, or amber, whatever. used for warning
+
+#ffb066 -> lighter peach
 
 #78a9ff -> blue, important. tertiary/secondary
 
+#a6c8ff -> light blue
+
 #be95ff -> purple, secondary/tertiary
+
+#d4bbff -> light purple
 
 #3ddbd9 -> cyan, if you're feeling fancy, can also slot as accent
 
-#e6edf3 -> off white
+#6ff0ee -> lighter cyan
 
-
-## another color variants (can be darker or lighter)
-
-#ee5396
-
-#ff8389
-
-#e3ff9e
-
-#ffb066
-
-#a6c8ff
-
-#d4bbff
-
-#6ff0ee
-
-#dde1e6
+#f2f4f8 -> main foreground color
 
 ## Greyscales for outlines, etc
 
-#8d8d8d -> Outline0, the brightest, i like it as comment and unselected entries
+#8d8d8d -> Outline0, brightest variant
 
-#525252 -> Outline1, used for muted stuff
+#7a7a7a -> Outline1, i use this mostly for comments
 
-#393939 -> Outline2, used for unasumming border color, also used for selected text background (visual mode in nvim, etc)
+#525252 -> Outline2, used for muted stuff
 
-#262626 -> Outline3, i usually use this for secondary background, notifications etc
+#393939 -> Outline3, used for unasumming border color, also used for selected text background (visual mode in nvim, etc)
+
+#262626 -> Outline4, i usually use this for secondary background, notifications etc
+
+#161616 -> base, main background color
