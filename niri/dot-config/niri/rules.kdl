@@ -13,7 +13,6 @@ window-rule {
 }
 
 blur {
-    off
     passes 3
     offset 3
     saturation 1.5
@@ -23,7 +22,6 @@ window-rule {
   match title="Helium"
   open-maximized true
 }
-
 
 window-rule {
     match app-id="clip"

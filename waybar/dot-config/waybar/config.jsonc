@@ -61,7 +61,7 @@
     "tooltip": false
 },
 "niri/window": {
-  "max-length": 30
+  "max-length": 55
 },
 "niri/workspaces": {
     "on-click": "activate",
