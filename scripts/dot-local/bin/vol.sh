@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Volume control script using minosd OSD
-# Usage: vol.sh up|down|mute
 
 ACTION="$1"
 
@@ -11,12 +9,10 @@ case "$ACTION" in
     *)    echo "Usage: $0 {up|down|mute}" >&2; exit 1     ;;
 esac
 
-# Read current state
 RAW=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
 VOLUME=$(echo "$RAW" | awk '{print int($2 * 100)}')
 MUTED=$(echo "$RAW" | grep -c MUTED)
 
-# Pick icon
 if [ "$MUTED" -eq 1 ]; then
     ICON="󰝟"
     TEXT="Muted"
@@ -31,7 +27,6 @@ else
     TEXT="Volume"
 fi
 
-# Send to minosd
 SOCKET="${XDG_RUNTIME_DIR:-/tmp}/minosd.sock"
 
 if [ ! -S "$SOCKET" ]; then

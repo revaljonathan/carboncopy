@@ -78,6 +78,6 @@ window#waybar {
     color: @outline;
 }
 
-#temperature {
+#custom-caf-waybar {
     margin-right: 8px;
 }

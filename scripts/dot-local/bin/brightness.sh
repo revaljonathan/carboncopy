@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Brightness control script using minosd OSD
-# Usage: brightness.sh up|down
 
 ACTION="$1"
 
@@ -10,12 +8,10 @@ case "$ACTION" in
     *)    echo "Usage: $0 {up|down}" >&2; exit 1 ;;
 esac
 
-# Read current brightness percentage
 BRIGHTNESS=$(brightnessctl get)
 MAX=$(brightnessctl max)
 PERCENT=$((BRIGHTNESS * 100 / MAX))
 
-# Pick icon
 if [ "$PERCENT" -ge 75 ]; then
     ICON="󰃠"
 elif [ "$PERCENT" -ge 50 ]; then
@@ -26,7 +22,6 @@ else
     ICON="󰃟"
 fi
 
-# Send to minosd
 SOCKET="${XDG_RUNTIME_DIR:-/tmp}/minosd.sock"
 
 if [ ! -S "$SOCKET" ]; then
