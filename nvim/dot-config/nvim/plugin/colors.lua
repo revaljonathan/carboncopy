@@ -26,7 +26,7 @@ if cc.cursorline_bg then
     hl(0, "CursorLine", { bg = cc.cursorline_bg })
 end
 hl(0, "CursorLineNr", { fg = cc.primary, bold = true })
-hl(0, "LineNr",       { fg = cc.telescope_border, bg = "NONE" })
+hl(0, "LineNr",       { fg = cc.syn_comment, bg = "NONE" })
 
 local visual_opts = { bg = cc.visual_bg or cc.darker }
 if cc.visual_fg then

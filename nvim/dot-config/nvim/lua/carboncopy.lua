@@ -12,6 +12,8 @@ M.cursorline_bg           = "#393939"
 M.darker                  = "#262626"
 M.cursorline_fg           = "#dde1e6"
 
+M.linenr                  = "#525252"
+
 M.visual_bg               = "#393939"
 M.visual_fg               = "#f2f4f8"
 
