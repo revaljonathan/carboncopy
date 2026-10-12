@@ -34,9 +34,13 @@ thx ibm for most of the palettes, will steal again
 
 #f2f4f8 -> main foreground color
 
+#e0e0e0 -> darker fg variant
+
+#c6c6c6 -> even darker fg variant
+
 ## Greyscales for outlines, etc
 
-#8d8d8d -> Outline0, brightest variant
+#8d8d8d -> Outline0, brightest outline variant
 
 #7a7a7a -> Outline1, i use this mostly for comments
 

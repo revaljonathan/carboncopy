@@ -63,3 +63,4 @@ alias dw='dysk'
 
 alias aq='asciiquarium'
 alias plis='sudo'
+alias b=btop
