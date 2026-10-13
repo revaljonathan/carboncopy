@@ -15,7 +15,7 @@ syntect_theme = "~/.config/yazi/Catppucin-mocha.tmTheme"
 
 [tabs]
 active   = { fg = "200", bg = "238", bold = true }
-inactive = { fg = "240", bg = "238" }
+inactive = { fg = "240", bg = "black" }
 padding = { open = "██", close = "" }
 sep_inner = { open = "", close = "" }
 sep_outer = { open = "", close = "" }
