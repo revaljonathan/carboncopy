@@ -57,6 +57,7 @@
   "format": "{}",
     "interval": 900,
     "exec": "~/.config/waybar/weather.sh",
+    "on-click-right": "~/.config/waybar/weather.sh",
     "tooltip": false
 },
 "niri/window": {

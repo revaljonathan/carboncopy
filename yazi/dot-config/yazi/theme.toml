@@ -14,8 +14,8 @@ border_style    = { fg = "bright_black" }
 syntect_theme = "~/.config/yazi/Catppucin-mocha.tmTheme"
 
 [tabs]
-active   = { fg = "200", bg = "black", bold = true }
-inactive = { fg = "240", bg = "black" }
+active   = { fg = "200", bg = "238", bold = true }
+inactive = { fg = "240", bg = "238" }
 padding = { open = "██", close = "" }
 sep_inner = { open = "", close = "" }
 sep_outer = { open = "", close = "" }

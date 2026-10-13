@@ -43,7 +43,7 @@ layout {
 
 
 animations {
-    on
+    off
 
     workspace-switch {
         spring damping-ratio=1.0 stiffness=1200 epsilon=0.0001
