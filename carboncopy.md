@@ -8,7 +8,7 @@ thx ibm for most of the palettes, will steal again
 
 #ff8389 -> lighter red
 
-#ff7eb6 -> pink, primary accent
+#ff99c5 -> pink, primary accent
 
 #ee5396 -> stronger pink
 

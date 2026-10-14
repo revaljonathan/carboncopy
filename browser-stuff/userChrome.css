@@ -1,8 +1,12 @@
-:root {
---tab-border-radius: var(--toolbarbutton-border-radius);
---toolbarbutton-border-radius: var(--button-border-radius);
---button-border-radius: var(--border-radius-medium);
---border-radius-medium: 0px !important;
---arrowpanel-border-radius: 0px !important;
---arrowpanel-menuitem-border-radius: 0px !important;
+#TabsToolbar { display: none !important; }
+#sidebar-panel-header { display: none !important; }
+#sidebar-box { padding-inline-start: 0px !important; }
+
+:root[uidensity="compact"] .tab-background {
+    min-height: 0 !important;
 }
+#TabsToolbar {
+    --tab-min-height: 24px !important;
+}
+* { border-radius: 0px !important; }
+
