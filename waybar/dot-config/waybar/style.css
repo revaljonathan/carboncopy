@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+tooltip label {
+    font-family: "carbonsevka";
+    color: @fg;
+}
+
 window#waybar {
     background: @base;
     color: @fg;
@@ -22,13 +27,13 @@ window#waybar {
 #workspaces button {
     margin: 0 0 2px 2px;
     background: transparent;
-    color: @outline;
+    color: @outline2;
     transition: all 150ms ease;
 }
 
 #workspaces button.empty {
     background: transparent;
-    color: @outline;
+    color: @outline2;
 }
 
 #workspaces button.focused {
@@ -43,7 +48,7 @@ window#waybar {
 }
 
 #custom-sep {
-    color: @outline;
+    color: @outline2;
 }
 
 #clock,
@@ -63,11 +68,12 @@ window#waybar {
 }
 
 #mpris.paused {
-    color: @outline;
+    color: @outline1;
+    background-color: @outline4;
 }
 
 #pulseaudio.muted {
-    color: @outline;
+    color: @outline2;
 }
 
 #pulseaudio.microphone {
@@ -75,9 +81,13 @@ window#waybar {
 }
 
 #pulseaudio.microphone.source-muted {
-    color: @outline;
+    color: @outline2;
 }
 
 #custom-caf-waybar {
     margin-right: 8px;
+}
+
+#mpris {
+    background-color: @outline3;
 }

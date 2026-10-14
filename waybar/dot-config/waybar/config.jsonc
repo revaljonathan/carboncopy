@@ -11,6 +11,7 @@
         "tray",
         "custom/sep",
         "niri/window",
+        "custom/sep"
     ],
 
     "modules-center": [
@@ -28,6 +29,7 @@
         "network",
         "custom/sep",
         "mpris",
+        "custom/sep",
         "memory",
        "custom/sep",
        "temperature",
@@ -39,6 +41,7 @@
     "exec": "pgrep sleep.sh >/dev/null && echo 'Sleepy' || echo 'Caffeinated'",
     "signal": 13,
     "format": "{}",
+    "interval": 900,
     "tooltip": false
 }, 
 
@@ -78,11 +81,13 @@
 
     "clock": {
         "format": "{:%a, %d %b %H:%M}",
+        "tooltip": false
     },
 
     "memory": {
         "format": "Mem: {used:0.1f}GiB",
-        "tooltip": false
+        "tooltip": false,
+        "interval": 90
     },
 
     "temperature": {
@@ -90,6 +95,7 @@
         "input-filename": "temp1_input",
         "critical-threshold": 80,
         "format": "Temp: {temperatureC}°C",
+        "interval": 90,
         "tooltip": false
     },
 
@@ -103,6 +109,8 @@
         "format-full": "Bat: {capacity}%",
         "format-charging": "Charging: {capacity}%",
         "format-plugged": "Bat: {capacity}%",
+        "tooltip": false,
+        "interval": 90
     },
 
     "network": {
@@ -117,13 +125,15 @@
     "pulseaudio": {
         "format": "Vol: {volume}%",
         "format-muted": "Vol: mute", 
-        "on-click": "footclient --class=clip wiremix -v output",
+        "tooltip": false,
+        "on-click": "footclient --class=clip wiremix -v output"
     },
 
     "mpris": {
         "format": "{title} - {artist}",
-   "title-len": 25,
-    "artist-len": 25,
-        "format-paused": "{title} - {artist}",
-    },
+        "title-len": 55,
+        "tooltip": false,
+        "artist-len": 25,
+            "format-paused": "{title} - {artist}",
+        },
 }

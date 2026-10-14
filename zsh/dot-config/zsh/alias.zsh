@@ -7,7 +7,6 @@ alias clean='paccache -rk 1 && yay -Yc'
 alias pacnews='arch_news_check'
 alias zshnew='source ~/.zshrc'
 alias locai='ollama serve && ollama'
-alias pw='pass.py'
 alias sn='shutdown now'
 alias sp='systemctl suspend'
 alias rb='reboot'
@@ -20,16 +19,13 @@ alias gc='git commit -m'
 alias gp='git push'
 
 
-alias nano='micro'
 alias vim='nvim'
 alias nv='nvim'
-alias mic='micro'
 
 alias see='bat'
 alias clipwipe='rm ~/.cache/cliphist/db'
 alias view='gwenview'
 alias zat='zathura'
-alias find='fd'
 
 
 alias docs='cd Documents'

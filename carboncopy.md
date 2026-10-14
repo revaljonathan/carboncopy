@@ -32,11 +32,11 @@ thx ibm for most of the palettes, will steal again
 
 #6ff0ee -> lighter cyan
 
-#f2f4f8 -> main foreground color
+#f2f4f8 -> fg, main foreground color
 
-#e0e0e0 -> darker fg variant
+#e0e0e0 -> fg1, darker fg variant
 
-#c6c6c6 -> even darker fg variant
+#c6c6c6 -> fg2, even darker fg variant
 
 ## Greyscales for outlines, etc
 
@@ -46,7 +46,7 @@ thx ibm for most of the palettes, will steal again
 
 #525252 -> Outline2, used for muted stuff
 
-#393939 -> Outline3, used for unasumming border color, also used for selected text background (visual mode in nvim, etc)
+#393939 -> Outline3, used for unassuming border color, also used for selected text background (visual mode in nvim, etc)
 
 #262626 -> Outline4, i usually use this for secondary background, notifications etc
 

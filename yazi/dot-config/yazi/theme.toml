@@ -1,5 +1,5 @@
 [mgr]
-cwd             = { fg = "cyan" }
+cwd             = { fg = "yellow" }
 find_keyword    = { fg = "yellow", italic = true }
 find_position   = { fg = "magenta", bg = "reset", italic = true }
 marker_copied   = { fg = "green", bg = "green" }
@@ -11,7 +11,6 @@ count_cut       = { fg = "black", bg = "red" }
 count_selected  = { fg = "black", bg = "yellow" }
 border_symbol   = "│"
 border_style    = { fg = "bright_black" }
-syntect_theme = "~/.config/yazi/Catppucin-mocha.tmTheme"
 
 [tabs]
 active   = { fg = "200", bg = "238", bold = true }
