@@ -10,7 +10,9 @@ thx ibm for most of the palettes, will steal again
 
 #ff99c5 -> pink, primary accent
 
-#ee5396 -> stronger pink
+#ff7eb6 -> stronger pink
+
+#ee5396 -> very saturated pink
 
 #cff27e -> lime green, correct/succeed/etc
 
