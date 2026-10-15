@@ -4,8 +4,8 @@ input {
             options "caps:escape"
         }
         numlock
-        repeat-delay 300
-        repeat-rate 50
+        repeat-delay 200
+        repeat-rate 35
     }
     touchpad {
         tap

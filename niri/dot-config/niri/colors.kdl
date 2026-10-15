@@ -14,7 +14,7 @@ layout {
 
 	border {
 		active-color "#ff99c5"
-		inactive-color "#262626"
+		inactive-color "#393939"
 		urgent-color   "#ff99c5"
 	}
 	insert-hint {
@@ -28,6 +28,6 @@ overview {
 recent-windows {
 	highlight {
 		active-color "#78a9ff"
-		urgent-color "#ff99c5"
+		urgent-color "#fa4d56"
 	}
 }
