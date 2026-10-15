@@ -66,7 +66,7 @@ return {
                 end,
 
                 keymap = {
-                    preset    = "none",
+                    preset        = "none",
                     ["<CR>"]      = { "accept", "fallback" },
                     ["<C-e>"]     = { "cancel", "fallback" },
                     ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
@@ -84,24 +84,26 @@ return {
                 },
 
                 completion = {
-                    accept = { auto_brackets = { enabled = true } },
-                    list   = { selection = { preselect = true, auto_insert = false } },
-                    menu   = {
+                    accept        = { auto_brackets = { enabled = true } },
+                    list          = { selection = { preselect = true, auto_insert = false } },
+                    menu          = {
                         border = "none",
-                        winhighlight = "Normal:BlinkCmpMenu,FloatBorder:BlinkCmpMenuBorder,CursorLine:BlinkCmpMenuSelection,Search:None",
+                        winhighlight =
+                        "Normal:BlinkCmpMenu,FloatBorder:BlinkCmpMenuBorder,CursorLine:BlinkCmpMenuSelection,Search:None",
                         draw = {
                             columns = {
-                                { "label", "label_description", gap = 1 },
-                                { "kind_icon", "kind",          gap = 1 },
+                                { "label",     "label_description", gap = 1 },
+                                { "kind_icon", "kind",              gap = 1 },
                             },
                         },
                     },
                     documentation = {
                         auto_show          = true,
                         auto_show_delay_ms = 200,
-                        window = {
-                            border      = "none",
-                            winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpMenuSelection,Search:None",
+                        window             = {
+                            border       = "none",
+                            winhighlight =
+                            "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpMenuSelection,Search:None",
                         },
                     },
                 },
@@ -117,31 +119,31 @@ return {
             if not cc_ok then return end
 
             local hl = vim.api.nvim_set_hl
-            hl(0, "Pmenu",      { bg = M.darker, fg = M.fg })
-            hl(0, "PmenuSel",   { bg = M.telescope_selection_bg, fg = M.fg })
-            hl(0, "PmenuSbar",  { bg = M.darker })
+            hl(0, "Pmenu", { bg = M.darker, fg = M.fg })
+            hl(0, "PmenuSel", { bg = M.telescope_selection_bg, fg = M.fg })
+            hl(0, "PmenuSbar", { bg = M.darker })
             hl(0, "PmenuThumb", { bg = M.secondary })
 
-            hl(0, "BlinkCmpMenu",            { bg = M.darker, fg = M.fg })
-            hl(0, "BlinkCmpMenuBorder",      { fg = M.secondary, bg = M.darker })
-            hl(0, "BlinkCmpMenuSelection",   { bg = M.telescope_selection_bg, fg = M.fg })
-            hl(0, "BlinkCmpLabel",           { fg = M.fg })
+            hl(0, "BlinkCmpMenu", { bg = M.darker, fg = M.fg })
+            hl(0, "BlinkCmpMenuBorder", { fg = M.secondary, bg = M.darker })
+            hl(0, "BlinkCmpMenuSelection", { bg = M.telescope_selection_bg, fg = M.fg })
+            hl(0, "BlinkCmpLabel", { fg = M.fg })
             hl(0, "BlinkCmpLabelDeprecated", { fg = M.cursorline_fg, strikethrough = true })
-            hl(0, "BlinkCmpLabelMatch",      { fg = M.primary, bold = true })
-            hl(0, "BlinkCmpKind",            { fg = M.secondary })
-            hl(0, "BlinkCmpDoc",             { bg = M.darker, fg = M.fg })
-            hl(0, "BlinkCmpDocBorder",       { fg = M.secondary, bg = M.darker })
+            hl(0, "BlinkCmpLabelMatch", { fg = M.primary, bold = true })
+            hl(0, "BlinkCmpKind", { fg = M.secondary })
+            hl(0, "BlinkCmpDoc", { bg = M.darker, fg = M.fg })
+            hl(0, "BlinkCmpDocBorder", { fg = M.secondary, bg = M.darker })
 
-            hl(0, "CmpNormal",             { link = "BlinkCmpMenu" })
-            hl(0, "CmpBorder",             { link = "BlinkCmpMenuBorder" })
-            hl(0, "CmpSel",                { link = "BlinkCmpMenuSelection" })
-            hl(0, "CmpItemAbbr",           { link = "BlinkCmpLabel" })
+            hl(0, "CmpNormal", { link = "BlinkCmpMenu" })
+            hl(0, "CmpBorder", { link = "BlinkCmpMenuBorder" })
+            hl(0, "CmpSel", { link = "BlinkCmpMenuSelection" })
+            hl(0, "CmpItemAbbr", { link = "BlinkCmpLabel" })
             hl(0, "CmpItemAbbrDeprecated", { link = "BlinkCmpLabelDeprecated" })
-            hl(0, "CmpItemAbbrMatch",      { link = "BlinkCmpLabelMatch" })
+            hl(0, "CmpItemAbbrMatch", { link = "BlinkCmpLabelMatch" })
             hl(0, "CmpItemAbbrMatchFuzzy", { link = "BlinkCmpLabelMatch" })
-            hl(0, "CmpItemKind",           { link = "BlinkCmpKind" })
-            hl(0, "CmpDoc",                { link = "BlinkCmpDoc" })
-            hl(0, "CmpDocBorder",          { link = "BlinkCmpDocBorder" })
+            hl(0, "CmpItemKind", { link = "BlinkCmpKind" })
+            hl(0, "CmpDoc", { link = "BlinkCmpDoc" })
+            hl(0, "CmpDocBorder", { link = "BlinkCmpDocBorder" })
 
             for _, kind in ipairs({
                 "Text", "Method", "Function", "Constructor", "Field", "Variable", "Class",
@@ -150,7 +152,7 @@ return {
                 "Constant", "Struct", "Event", "Operator", "TypeParameter", "Copilot",
             }) do
                 hl(0, "BlinkCmpKind" .. kind, { link = "BlinkCmpKind" })
-                hl(0, "CmpItemKind"  .. kind, { link = "BlinkCmpKind" })
+                hl(0, "CmpItemKind" .. kind, { link = "BlinkCmpKind" })
             end
         end,
     },
@@ -184,11 +186,11 @@ return {
             vim.keymap.set("n", "<leader>ff", builtin.find_files)
             vim.keymap.set("n", "<leader>fo", builtin.oldfiles)
             vim.keymap.set("n", "<leader>fq", builtin.quickfix)
-            vim.keymap.set("n", "<leader>fh", builtin.help_tags,   { desc = "Help tags" })
+            vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help tags" })
             vim.keymap.set("n", "<leader>fm", function()
                 builtin.man_pages({ sections = { "ALL" } })
             end, { desc = "Man pages" })
-            vim.keymap.set("n", "<leader>fb", builtin.buffers,     { desc = "Buffers" })
+            vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Buffers" })
             vim.keymap.set("n", "<leader>fg", function()
                 builtin.grep_string({ search = vim.fn.input("Grep > ") })
             end)
@@ -213,10 +215,10 @@ return {
             local harpoon = require("harpoon")
             harpoon:setup()
 
-            vim.keymap.set("n", "<leader>a",  function() harpoon:list():add() end)
-            vim.keymap.set("n", "<C-e>",      function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
-            vim.keymap.set("n", "<C-p>",      function() harpoon:list():prev() end)
-            vim.keymap.set("n", "<C-n>",      function() harpoon:list():next() end)
+            vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
+            vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+            vim.keymap.set("n", "<C-p>", function() harpoon:list():prev() end)
+            vim.keymap.set("n", "<C-n>", function() harpoon:list():next() end)
 
             -- Browse harpoon list in Telescope
             vim.keymap.set("n", "<leader>fl", function()
@@ -227,9 +229,9 @@ return {
                     table.insert(file_paths, item.value)
                 end
                 require("telescope.pickers").new(themes.get_ivy({ prompt_title = "Working List" }), {
-                    finder   = require("telescope.finders").new_table({ results = file_paths }),
+                    finder    = require("telescope.finders").new_table({ results = file_paths }),
                     previewer = conf.file_previewer({}),
-                    sorter   = conf.generic_sorter({}),
+                    sorter    = conf.generic_sorter({}),
                 }):find()
             end, { desc = "Harpoon list (Telescope)" })
         end,
@@ -238,14 +240,14 @@ return {
     -- ── File explorer ──────────────────────────────────────────────────────
     {
         "nvim-tree/nvim-tree.lua",
-        lazy  = false,
+        lazy         = false,
         dependencies = { "nvim-tree/nvim-web-devicons" },
-        init = function()
+        init         = function()
             -- must disable netrw before nvim-tree loads
             vim.g.loaded_netrw       = 1
             vim.g.loaded_netrwPlugin = 1
         end,
-        config = function()
+        config       = function()
             require("nvim-tree").setup({
                 sort     = { sorter = "case_sensitive" },
                 view     = { width = 30 },
@@ -277,13 +279,13 @@ return {
             local cc_ok, cc = pcall(require, "carboncopy")
             if cc_ok and cc.bg then
                 vim.api.nvim_set_hl(0, "NvimTreeStatuslineNc", { fg = cc.bg, bg = cc.bg })
-                vim.api.nvim_set_hl(0, "NvimTreeStatusLine",   { fg = cc.bg, bg = cc.bg })
+                vim.api.nvim_set_hl(0, "NvimTreeStatusLine", { fg = cc.bg, bg = cc.bg })
             end
         end,
     },
 
     -- ── Utilities ──────────────────────────────────────────────────────────
-    { "brenoprata10/nvim-highlight-colors", event = "VeryLazy", opts = {} },
+    { "brenoprata10/nvim-highlight-colors", event = "VeryLazy",    opts = {} },
     { "tpope/vim-fugitive",                 cmd = { "Git", "G" } },
     { "mbbill/undotree",                    cmd = "UndotreeToggle" },
     { "ojroques/vim-oscyank",               event = "VeryLazy" },
@@ -302,35 +304,35 @@ return {
             local highlights = {}
             if cc_ok then
                 highlights = {
-                    fill                 = { bg = "NONE" },
-                    background           = { bg = cc.bg,      fg = cc.fg },
-                    buffer_selected      = { fg = cc.bg,      bg = cc.primary, bold = true, italic = false },
-                    buffer_visible       = { bg = cc.bg,      fg = cc.secondary },
-                    separator            = { fg = cc.bg,      bg = cc.bg },
-                    separator_selected   = { fg = cc.bg,      bg = cc.primary },
-                    separator_visible    = { fg = cc.bg,      bg = cc.bg },
-                    indicator_selected   = { fg = cc.primary, bg = cc.primary },
-                    modified             = { fg = cc.cursorline_bg, bg = cc.bg },
-                    modified_visible     = { fg = cc.cursorline_bg, bg = cc.bg },
-                    modified_selected    = { fg = cc.cursorline_bg, bg = cc.primary },
+                    fill               = { bg = "NONE" },
+                    background         = { bg = cc.bg, fg = cc.fg },
+                    buffer_selected    = { fg = cc.bg, bg = cc.primary, bold = true, italic = false },
+                    buffer_visible     = { bg = cc.bg, fg = cc.secondary },
+                    separator          = { fg = cc.bg, bg = cc.bg },
+                    separator_selected = { fg = cc.bg, bg = cc.primary },
+                    separator_visible  = { fg = cc.bg, bg = cc.bg },
+                    indicator_selected = { fg = cc.primary, bg = cc.primary },
+                    modified           = { fg = cc.cursorline_bg, bg = cc.bg },
+                    modified_visible   = { fg = cc.cursorline_bg, bg = cc.bg },
+                    modified_selected  = { fg = cc.cursorline_bg, bg = cc.primary },
                 }
             end
 
             require("bufferline").setup({
                 options = {
-                    themable               = false,
-                    mode                   = "buffers",
-                    offsets                = {
+                    themable                = false,
+                    mode                    = "buffers",
+                    offsets                 = {
                         { filetype = "NvimTree", text = "File Explorer", text_align = "left", separator = true },
                     },
-                    color_icons            = true,
-                    show_buffer_icons      = true,
+                    color_icons             = true,
+                    show_buffer_icons       = true,
                     show_buffer_close_icons = false,
-                    show_close_icon        = false,
-                    persist_buffer_sort    = true,
-                    enforce_regular_tabs   = false,
-                    always_show_bufferline = false,
-                    sort_by                = "id",
+                    show_close_icon         = false,
+                    persist_buffer_sort     = true,
+                    enforce_regular_tabs    = false,
+                    always_show_bufferline  = false,
+                    sort_by                 = "id",
                 },
                 highlights = highlights,
             })
@@ -352,64 +354,71 @@ return {
             local NONE = "NONE"
             require("lualine").setup({
                 options = {
-                    theme = {
+                    theme                = {
                         normal   = {
-                            a = { fg = cc.bg,  bg = cc.primary,   gui = "bold" },
-                            b = { fg = cc.tree_indent_marker,  bg = cc.darker },
-                            c = { fg = cc.primary,  bg = NONE },
-                            x = { fg = cc.tree_indent_marker,  bg = cc.darker },
-                            y = { fg = cc.fg,        bg = cc.darker },
-                            z = { fg = cc.bg,        bg = cc.primary },
+                            a = { fg = cc.bg, bg = cc.primary, gui = "bold" },
+                            b = { fg = cc.tree_indent_marker, bg = cc.darker },
+                            c = { fg = cc.primary, bg = NONE },
+                            x = { fg = cc.tree_indent_marker, bg = cc.darker },
+                            y = { fg = cc.fg, bg = cc.darker },
+                            z = { fg = cc.bg, bg = cc.primary },
                         },
                         insert   = {
-                            a = { fg = cc.bg,        bg = cc.tertiary, gui = "bold" },
-                            b = { fg = cc.tree_indent_marker,  bg = cc.darker },
-                            c = { fg = cc.tertiary,  bg = NONE },
-                            x = { fg = cc.tree_indent_marker,  bg = cc.darker },
-                            y = { fg = cc.fg,         bg = cc.darker },
-                            z = { fg = cc.bg,         bg = cc.tertiary },
+                            a = { fg = cc.bg, bg = cc.tertiary, gui = "bold" },
+                            b = { fg = cc.tree_indent_marker, bg = cc.darker },
+                            c = { fg = cc.tertiary, bg = NONE },
+                            x = { fg = cc.tree_indent_marker, bg = cc.darker },
+                            y = { fg = cc.fg, bg = cc.darker },
+                            z = { fg = cc.bg, bg = cc.tertiary },
                         },
                         visual   = {
-                            a = { fg = cc.bg,        bg = cc.fg,       gui = "bold" },
+                            a = { fg = cc.bg, bg = cc.fg, gui = "bold" },
                             b = { fg = cc.tree_indent_marker, bg = cc.darker },
                             c = { fg = cc.secondary, bg = NONE },
                             x = { fg = cc.tree_indent_marker, bg = cc.darker },
-                            y = { fg = cc.fg,         bg = cc.darker },
-                            z = { fg = cc.bg,         bg = cc.fg },
+                            y = { fg = cc.fg, bg = cc.darker },
+                            z = { fg = cc.bg, bg = cc.fg },
                         },
                         replace  = {
-                            a = { fg = cc.bg,        bg = cc.error,  gui = "bold" },
-                            b = { fg = cc.tree_indent_marker,     bg = NONE },
-                            c = { fg = cc.primary,   bg = NONE },
-                            x = { fg = cc.tree_indent_marker,   bg = cc.darker },
-                            y = { fg = cc.fg,         bg = cc.darker },
-                            z = { fg = cc.bg,         bg = cc.error },
+                            a = { fg = cc.bg, bg = cc.error, gui = "bold" },
+                            b = { fg = cc.tree_indent_marker, bg = NONE },
+                            c = { fg = cc.primary, bg = NONE },
+                            x = { fg = cc.tree_indent_marker, bg = cc.darker },
+                            y = { fg = cc.fg, bg = cc.darker },
+                            z = { fg = cc.bg, bg = cc.error },
                         },
                         inactive = {
                             a = { fg = cc.fg, bg = cc.bg },
                             b = { fg = cc.tree_indent_marker, bg = cc.bg },
                             c = { fg = cc.primary, bg = NONE },
                             x = { fg = cc.tree_indent_marker, bg = cc.darker },
-                            y = { fg = cc.fg,       bg = cc.darker },
-                            z = { fg = cc.fg,       bg = cc.bg },
+                            y = { fg = cc.fg, bg = cc.darker },
+                            z = { fg = cc.fg, bg = cc.bg },
                         },
                     },
                     component_separators = { left = "|", right = "|" },
-                    section_separators   = { left = "",  right = "" },
+                    section_separators   = { left = "", right = "" },
                 },
                 sections = {
                     lualine_a = { "mode" },
                     lualine_b = {
-                        { "branch",   color = { fg = cc.branch, bg = cc.darker } },
-                        { "filename", path = 0, color = { fg = cc.fg, bg = cc.darker },
-                          symbols = { modified = "●", readonly = "✘", unnamed = "[No Name]" } },
+                        { "branch", color = { fg = cc.branch, bg = cc.darker } },
+                        {
+                            "filename",
+                            path = 0,
+                            color = { fg = cc.fg, bg = cc.darker },
+                            symbols = { modified = "●", readonly = "✘", unnamed = "[No Name]" }
+                        },
                     },
                     lualine_c = {},
                     lualine_x = {
-                        { "fileformat", color = { fg = cc.fg, bg = cc.darker },
-                          symbols = { unix = "unix", dos = "DOS", mac = "Mac" } },
-                        { "filetype",   color = { fg = cc.fg, bg = cc.darker } },
-                        { "progress",   color = { fg = cc.fg, bg = cc.darker } },
+                        {
+                            "fileformat",
+                            color = { fg = cc.fg, bg = cc.darker },
+                            symbols = { unix = "unix", dos = "DOS", mac = "Mac" }
+                        },
+                        { "filetype", color = { fg = cc.fg, bg = cc.darker } },
+                        { "progress", color = { fg = cc.fg, bg = cc.darker } },
                     },
                     lualine_y = {},
                     lualine_z = { "location" },

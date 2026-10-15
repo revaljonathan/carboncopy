@@ -4,13 +4,13 @@ PREDEFINED=(
     "github"
     "Wikipedia"
     "Youtube"
+    "Reddit"
     "Arch Wiki"
     "Deepseek"
     "GPT"
     "Claude"
     "Gemini"
     "Dodgers"
-    "Catppuccin"
 )
 
 CHOICE=$(printf '%s\n' "${PREDEFINED[@]}" | fuzzel --dmenu)
@@ -37,12 +37,12 @@ case "$CHOICE" in
 *github*) helium-browser "https://github.com" ;;
 "Wikipedia"*) helium-browser "https://en.wikipedia.org/wiki/Main_Page" ;;
 "Youtube"*) helium-browser "https://www.youtube.com/" ;;
+"Reddit"*) helium-browser "https://www.reddit.com/" ;;
 "Arch Wiki"*) helium-browser "https://wiki.archlinux.org/title/Main_page" ;;
 "Deepseek"*) helium-browser "https://chat.deepseek.com/" ;;
 "GPT"*) helium-browser "https://chatgpt.com/" ;;
 "Claude"*) helium-browser "https://claude.ai/new" ;;
 "Gemini"*) helium-browser "https://gemini.google.com/app" ;;
 "Dodgers"*) helium-browser "https://search.brave.com/search?q=!g dodgers" ;;
-"Catppuccin"*) helium-browser "https://catppuccin.com/palette/" ;;
 *) helium-browser "https://search.brave.com/search?q=$(urlencode "$CHOICE")" ;;
 esac
