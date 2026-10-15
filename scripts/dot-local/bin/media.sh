@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 ASSETS="$HOME/.config/quickshell/notification/assets"
 TEMP_ICON="/tmp/media-art-$$.jpg"
 trap "rm -f '$TEMP_ICON'" EXIT INT TERM
