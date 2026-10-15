@@ -1,0 +1,17 @@
+#TabsToolbar { display: none !important; }
+#sidebar-panel-header { display: none !important; }
+#sidebar-box { padding-inline-start: 0px !important; }
+
+:root[uidensity="compact"] .tab-background {
+    min-height: 0 !important;
+}
+#TabsToolbar {
+    --tab-min-height: 24px !important;
+}
+* { border-radius: 0px !important; }
+
+#sidebar-box {
+  min-width: 160px !important;
+  width: 160px !important;
+}
+
