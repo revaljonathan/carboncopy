@@ -10,7 +10,7 @@ count_copied    = { fg = "black", bg = "green" }
 count_cut       = { fg = "black", bg = "red" }
 count_selected  = { fg = "black", bg = "yellow" }
 border_symbol   = "│"
-border_style    = { fg = "bright_black" }
+border_style    = { fg = "238" }
 
 [tabs]
 active   = { fg = "200", bg = "238", bold = true }

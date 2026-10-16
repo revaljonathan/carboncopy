@@ -1,4 +1,4 @@
-local M = {}
+local M                   = {}
 
 M.bg                      = "#161616"
 M.fg                      = "#f2f4f8"
@@ -38,6 +38,6 @@ M.syn_constant            = "#E28413"
 M.syn_comment             = "#7a7a7a"
 M.syn_variable            = "#f2f4f8"
 M.syn_operator            = "#3ddbd9"
-M.syn_special             = "#ee5396"
+M.syn_special             = "#ff7eb6"
 
 return M
