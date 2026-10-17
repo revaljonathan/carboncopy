@@ -23,7 +23,7 @@
     "modules-right": [
         "battery",
         "custom/sep",
-        "pulseaudio",
+        "wireplumber",
         "custom/sep",
         "network",
         "custom/sep",
@@ -121,7 +121,7 @@
         "on-click": "footclient --class=clip impala",
     },
 
-    "pulseaudio": {
+    "wireplumber": {
         "format": "Vol: {volume}%",
         "format-muted": "Vol: mute", 
         "tooltip": false,
