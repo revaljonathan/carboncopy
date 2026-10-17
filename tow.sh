@@ -20,9 +20,18 @@ for cfg in "${CONFIGS[@]}"; do
   fi
 done
 
-[[ -e "$HOME/.local/bin" ]] && mv "$HOME/.local/bin" "$BAK/"
+# If ~/.local is a symlink (from earlier folded stow runs), remove it
+if [[ -L "$HOME/.local" ]]; then
+  rm "$HOME/.local"
+fi
+
+# If ~/.local/bin was a folded symlink, back it up; otherwise preserve user binaries in ~/.local/bin
+if [[ -L "$HOME/.local/bin" ]]; then
+  mv "$HOME/.local/bin" "$BAK/"
+fi
+mkdir -p "$HOME/.local/bin"
 
 cd "$HOME/carboncopy"
 for pkg in "${PACKAGES[@]}"; do
-  stow --dotfiles --target="$HOME" "$pkg"
+  stow --no-folding --dotfiles --target="$HOME" "$pkg"
 done
