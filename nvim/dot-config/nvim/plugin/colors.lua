@@ -13,83 +13,116 @@ end
 
 local hl = vim.api.nvim_set_hl
 
-hl(0, "Normal",       { fg = cc.fg, bg = "NONE" })
-hl(0, "NormalFloat",  { fg = cc.fg, bg = "NONE" })
-hl(0, "FloatBorder",  { fg = cc.telescope_border or cc.primary, bg = "NONE" })
-hl(0, "FloatTitle",   { fg = cc.primary, bold = true })
-hl(0, "SignColumn",   { bg = "NONE" })
-hl(0, "Directory",    { fg = cc.tree_folder or cc.syn_func, bg = "NONE", bold = true })
-hl(0, "ColorColumn",  { bg = cc.cursorline_bg })
-hl(0, "MatchParen",   { fg = cc.primary, bold = true })
+hl(0, "Normal", { fg = cc.fg, bg = "NONE" })
+hl(0, "NormalFloat", { fg = cc.fg, bg = cc.cursorline_bg })
+hl(0, "FloatBorder", { fg = cc.telescope_border or cc.primary, bg = cc.cursorline_bg })
+hl(0, "FloatTitle", { fg = cc.primary, bold = true })
+hl(0, "SignColumn", { bg = "NONE" })
+hl(0, "Directory", { fg = cc.tree_folder or cc.syn_func, bg = "NONE", bold = true })
+hl(0, "ColorColumn", { bg = cc.cursorline_bg })
+hl(0, "MatchParen", { fg = cc.primary, bold = true })
 
 if cc.cursorline_bg then
     hl(0, "CursorLine", { bg = cc.cursorline_bg })
 end
 hl(0, "CursorLineNr", { fg = cc.primary, bold = true })
-hl(0, "LineNr",       { fg = cc.syn_comment, bg = "NONE" })
+hl(0, "LineNr", { fg = cc.syn_comment, bg = "NONE" })
 
 local visual_opts = { bg = cc.visual_bg or cc.darker }
 if cc.visual_fg then
     visual_opts.fg = cc.visual_fg
 end
-hl(0, "Visual",    visual_opts)
+hl(0, "Visual", visual_opts)
 hl(0, "VisualNOS", visual_opts)
 
-hl(0, "Search",    { fg = cc.bg, bg = cc.secondary })
+hl(0, "Search", { fg = cc.bg, bg = cc.secondary })
 hl(0, "IncSearch", { fg = cc.bg, bg = cc.primary })
 hl(0, "CurSearch", { fg = cc.bg, bg = cc.primary })
 
 hl(0, "WinSeparator", { fg = cc.cursorline_bg, bg = "NONE" })
-hl(0, "VertSplit",    { fg = cc.cursorline_bg, bg = "NONE" })
-hl(0, "StatusLine",   { fg = cc.fg, bg = cc.darker })
+hl(0, "VertSplit", { fg = cc.cursorline_bg, bg = "NONE" })
+hl(0, "StatusLine", { fg = cc.fg, bg = cc.darker })
 hl(0, "StatusLineNC", { fg = cc.telescope_border, bg = cc.darker })
 
-hl(0, "Pmenu",      { bg = cc.darker, fg = cc.fg })
-hl(0, "PmenuSel",   { bg = cc.telescope_selection_bg or cc.cursorline_bg, fg = cc.fg })
-hl(0, "PmenuSbar",  { bg = cc.darker })
+hl(0, "Pmenu", { bg = cc.darker, fg = cc.fg })
+hl(0, "PmenuSel", { bg = cc.telescope_selection_bg or cc.cursorline_bg, fg = cc.fg })
+hl(0, "PmenuSbar", { bg = cc.darker })
 hl(0, "PmenuThumb", { bg = cc.secondary })
 
+-- blink.cmp / nvim-cmp
+hl(0, "BlinkCmpMenu", { bg = cc.visual_bg, fg = cc.fg })
+hl(0, "BlinkCmpMenuBorder", { fg = cc.secondary, bg = cc.darker })
+hl(0, "BlinkCmpMenuSelection", { bg = cc.linenr or cc.cursorline_bg, fg = cc.fg })
+hl(0, "BlinkCmpLabel", { fg = cc.fg })
+hl(0, "BlinkCmpLabelDeprecated", { fg = cc.cursorline_fg, strikethrough = true })
+hl(0, "BlinkCmpLabelMatch", { fg = cc.primary, bold = true })
+hl(0, "BlinkCmpKind", { fg = cc.secondary })
+hl(0, "BlinkCmpDoc", { bg = cc.darker, fg = cc.fg })
+hl(0, "BlinkCmpDocBorder", { fg = cc.secondary, bg = cc.darker })
+
+hl(0, "CmpNormal", { link = "BlinkCmpMenu" })
+hl(0, "CmpBorder", { link = "BlinkCmpMenuBorder" })
+hl(0, "CmpSel", { link = "BlinkCmpMenuSelection" })
+hl(0, "CmpItemAbbr", { link = "BlinkCmpLabel" })
+hl(0, "CmpItemAbbrDeprecated", { link = "BlinkCmpLabelDeprecated" })
+hl(0, "CmpItemAbbrMatch", { link = "BlinkCmpLabelMatch" })
+hl(0, "CmpItemAbbrMatchFuzzy", { link = "BlinkCmpLabelMatch" })
+hl(0, "CmpItemKind", { link = "BlinkCmpKind" })
+hl(0, "CmpDoc", { link = "BlinkCmpDoc" })
+hl(0, "CmpDocBorder", { link = "BlinkCmpDocBorder" })
+
+for _, kind in ipairs({
+    "Text", "Method", "Function", "Constructor", "Field", "Variable", "Class",
+    "Interface", "Module", "Property", "Unit", "Value", "Enum", "Keyword",
+    "Snippet", "Color", "File", "Reference", "Folder", "EnumMember",
+    "Constant", "Struct", "Event", "Operator", "TypeParameter", "Copilot",
+}) do
+    hl(0, "BlinkCmpKind" .. kind, { link = "BlinkCmpKind" })
+    hl(0, "CmpItemKind" .. kind, { link = "BlinkCmpKind" })
+end
+
+
 if cc.telescope_border then
-    hl(0, "TelescopeBorder",       { fg = cc.telescope_border })
+    hl(0, "TelescopeBorder", { fg = cc.telescope_border })
     hl(0, "TelescopePromptBorder", { fg = cc.telescope_prompt_border or cc.primary })
-    hl(0, "TelescopePromptTitle",  { fg = cc.telescope_prompt_title or cc.primary, bold = true })
-    hl(0, "TelescopeSelection",    { bg = cc.telescope_selection_bg, fg = cc.telescope_selection_fg })
+    hl(0, "TelescopePromptTitle", { fg = cc.telescope_prompt_title or cc.primary, bold = true })
+    hl(0, "TelescopeSelection", { bg = cc.telescope_selection_bg, fg = cc.telescope_selection_fg })
 end
 
 if cc.tree_folder then
-    hl(0, "NvimTreeFolderName",       { fg = cc.tree_folder, bold = true })
+    hl(0, "NvimTreeFolderName", { fg = cc.tree_folder, bold = true })
     hl(0, "NvimTreeOpenedFolderName", { fg = cc.tree_folder_open or cc.tree_folder, bold = true })
-    hl(0, "NvimTreeIndentMarker",     { fg = cc.tree_indent_marker or cc.cursorline_bg })
-    hl(0, "NvimTreeRootFolder",       { fg = cc.tree_root or cc.error, bold = true })
-    hl(0, "NvimTreeStatuslineNc",     { fg = cc.bg, bg = cc.bg })
-    hl(0, "NvimTreeStatusLine",       { fg = cc.bg, bg = cc.bg })
+    hl(0, "NvimTreeIndentMarker", { fg = cc.tree_indent_marker or cc.cursorline_bg })
+    hl(0, "NvimTreeRootFolder", { fg = cc.tree_root or cc.error, bold = true })
+    hl(0, "NvimTreeStatuslineNc", { fg = cc.bg, bg = cc.bg })
+    hl(0, "NvimTreeStatusLine", { fg = cc.bg, bg = cc.bg })
 end
 
 if cc.darker then
-    hl(0, "RenderMarkdownCode",       { bg = cc.darker })
+    hl(0, "RenderMarkdownCode", { bg = cc.darker })
     hl(0, "RenderMarkdownCodeInline", { bg = cc.darker })
 end
 
-hl(0, "DiagnosticError",          { fg = cc.error })
-hl(0, "DiagnosticWarn",           { fg = cc.syn_constant })
-hl(0, "DiagnosticInfo",           { fg = cc.syn_func })
-hl(0, "DiagnosticHint",           { fg = cc.secondary })
+hl(0, "DiagnosticError", { fg = cc.error })
+hl(0, "DiagnosticWarn", { fg = cc.syn_constant })
+hl(0, "DiagnosticInfo", { fg = cc.syn_func })
+hl(0, "DiagnosticHint", { fg = cc.secondary })
 hl(0, "DiagnosticUnderlineError", { sp = cc.error, undercurl = true })
-hl(0, "DiagnosticUnderlineWarn",  { sp = cc.syn_constant, undercurl = true })
-hl(0, "DiagnosticUnderlineInfo",  { sp = cc.syn_func, undercurl = true })
-hl(0, "DiagnosticUnderlineHint",  { sp = cc.secondary, undercurl = true })
+hl(0, "DiagnosticUnderlineWarn", { sp = cc.syn_constant, undercurl = true })
+hl(0, "DiagnosticUnderlineInfo", { sp = cc.syn_func, undercurl = true })
+hl(0, "DiagnosticUnderlineHint", { sp = cc.secondary, undercurl = true })
 
 -- Git / Diff
-hl(0, "DiffAdd",    { fg = cc.syn_string or cc.branch })
+hl(0, "DiffAdd", { fg = cc.syn_string or cc.branch })
 hl(0, "DiffChange", { fg = cc.secondary })
 hl(0, "DiffDelete", { fg = cc.error })
-hl(0, "DiffText",   { fg = cc.syn_func })
+hl(0, "DiffText", { fg = cc.syn_func })
 
 -- snacks
 hl(0, "SnacksDashboardHeader", { fg = cc.primary, bold = true })
-hl(0, "SnacksDashboardDesc",   { fg = cc.fg })                   
-hl(0, "SnacksDashboardIcon",   { fg = cc.syn_constant })            
-hl(0, "SnacksDashboardKey",    { fg = cc.syn_constant })         
+hl(0, "SnacksDashboardDesc", { fg = cc.fg })
+hl(0, "SnacksDashboardIcon", { fg = cc.syn_constant })
+hl(0, "SnacksDashboardKey", { fg = cc.syn_constant })
 
 -- Syntax Highlighting
 local c = {
@@ -106,37 +139,37 @@ local c = {
 
 local syntax_groups = {
     -- Standard Vim syntax
-    Comment        = { fg = c.comment, italic = true },
-    Constant       = { fg = c.constant },
-    String         = { fg = c.string },
-    Character      = { fg = c.string },
-    Number         = { fg = c.constant },
-    Boolean        = { fg = c.constant },
-    Float          = { fg = c.constant },
-    Identifier     = { fg = c.variable },
-    Function       = { fg = c.func },
-    Statement      = { fg = c.keyword },
-    Conditional    = { fg = c.keyword },
-    Repeat         = { fg = c.keyword },
-    Label          = { fg = c.keyword },
-    Operator       = { fg = c.operator },
-    Keyword        = { fg = c.keyword },
-    Exception      = { fg = c.keyword },
-    PreProc        = { fg = c.special },
-    Include        = { fg = c.keyword },
-    Define         = { fg = c.special },
-    Macro          = { fg = c.special },
-    PreCondit      = { fg = c.special },
-    Type           = { fg = c.type },
-    StorageClass   = { fg = c.keyword },
-    Structure      = { fg = c.type },
-    Typedef        = { fg = c.type },
-    Special        = { fg = c.special },
-    SpecialChar    = { fg = c.special },
-    Tag            = { fg = c.func },
-    Delimiter      = { fg = c.operator },
-    SpecialComment = { fg = c.comment, italic = true },
-    Debug          = { fg = c.special },
+    Comment                    = { fg = c.comment, italic = true },
+    Constant                   = { fg = c.constant },
+    String                     = { fg = c.string },
+    Character                  = { fg = c.string },
+    Number                     = { fg = c.constant },
+    Boolean                    = { fg = c.constant },
+    Float                      = { fg = c.constant },
+    Identifier                 = { fg = c.variable },
+    Function                   = { fg = c.func },
+    Statement                  = { fg = c.keyword },
+    Conditional                = { fg = c.keyword },
+    Repeat                     = { fg = c.keyword },
+    Label                      = { fg = c.keyword },
+    Operator                   = { fg = c.operator },
+    Keyword                    = { fg = c.keyword },
+    Exception                  = { fg = c.keyword },
+    PreProc                    = { fg = c.special },
+    Include                    = { fg = c.keyword },
+    Define                     = { fg = c.special },
+    Macro                      = { fg = c.special },
+    PreCondit                  = { fg = c.special },
+    Type                       = { fg = c.type },
+    StorageClass               = { fg = c.keyword },
+    Structure                  = { fg = c.type },
+    Typedef                    = { fg = c.type },
+    Special                    = { fg = c.special },
+    SpecialChar                = { fg = c.special },
+    Tag                        = { fg = c.func },
+    Delimiter                  = { fg = c.operator },
+    SpecialComment             = { fg = c.comment, italic = true },
+    Debug                      = { fg = c.special },
 
     -- Treesitter syntax
     ["@comment"]               = { fg = c.comment, italic = true },

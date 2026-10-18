@@ -53,7 +53,7 @@ window#waybar {
 
 #clock,
 #battery,
-#pulseaudio,
+#wireplumber,
 #backlight,
 #memory,
 #window,
@@ -72,15 +72,15 @@ window#waybar {
     background-color: @outline4;
 }
 
-#pulseaudio.muted {
+#wireplumber.muted {
     color: @outline2;
 }
 
-#pulseaudio.microphone {
+#wireplumber.microphone {
     color: @fg;
 }
 
-#pulseaudio.microphone.source-muted {
+#wireplumber.microphone.source-muted {
     color: @outline2;
 }
 

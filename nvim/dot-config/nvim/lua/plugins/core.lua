@@ -7,7 +7,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-        event = { "BufReadPost", "BufNewFile" },
+        lazy = false,
         dependencies = {
             "nvim-treesitter/nvim-treesitter-textobjects",
             "nvim-treesitter/nvim-treesitter-context",
@@ -15,34 +15,49 @@ return {
         init = function()
             vim.filetype.add({ extension = { goon = "goon" } })
         end,
-        opts = {
-            ensure_installed = {
+        config = function()
+            local ts = require("nvim-treesitter")
+            ts.setup({})
+
+            -- Install desired parsers asynchronously
+            local parsers = {
                 "c", "lua", "vim", "vimdoc", "query",
                 "go", "javascript", "nix", "php", "rust",
                 "zig", "java", "python", "bash",
                 "markdown", "markdown_inline",
-            },
-            sync_install = false,
-            auto_install = true,
-            highlight = {
-                enable = true,
-                additional_vim_regex_highlighting = false,
-            },
-            textobjects = {
-                select = {
-                    enable = true,
-                    lookahead = true,
-                    keymaps = {
-                        ["af"] = "@function.outer",
-                        ["if"] = "@function.inner",
-                        ["ac"] = "@class.outer",
-                        ["ic"] = "@class.inner",
+            }
+            pcall(ts.install, parsers)
+
+            -- Enable treesitter highlighting automatically for supported buffers
+            vim.api.nvim_create_autocmd("FileType", {
+                callback = function(args)
+                    pcall(vim.treesitter.start, args.buf)
+                end,
+            })
+
+            -- Textobjects configuration (compatible with nvim-treesitter rewrite)
+            local ok_to, textobjects = pcall(require, "nvim-treesitter-textobjects")
+            if ok_to then
+                textobjects.setup({
+                    select = {
+                        lookahead = true,
                     },
-                },
-            },
-        },
-        config = function(_, opts)
-            require("nvim-treesitter").setup(opts)
+                })
+
+                local select_to = require("nvim-treesitter-textobjects.select")
+                vim.keymap.set({ "x", "o" }, "af", function()
+                    select_to.select_textobject("@function.outer", "textobjects")
+                end, { desc = "Select outer function" })
+                vim.keymap.set({ "x", "o" }, "if", function()
+                    select_to.select_textobject("@function.inner", "textobjects")
+                end, { desc = "Select inner function" })
+                vim.keymap.set({ "x", "o" }, "ac", function()
+                    select_to.select_textobject("@class.outer", "textobjects")
+                end, { desc = "Select outer class" })
+                vim.keymap.set({ "x", "o" }, "ic", function()
+                    select_to.select_textobject("@class.inner", "textobjects")
+                end, { desc = "Select inner class" })
+            end
 
             require("treesitter-context").setup({
                 enable = true,
@@ -113,61 +128,17 @@ return {
                     providers = { buffer = { min_keyword_length = 3 } },
                 },
             })
-
-            -- Carboncopy highlight groups for blink.cmp / cmp compatibility
-            local cc_ok, M = pcall(require, "carboncopy")
-            if not cc_ok then return end
-
-            local hl = vim.api.nvim_set_hl
-            hl(0, "Pmenu", { bg = M.darker, fg = M.fg })
-            hl(0, "PmenuSel", { bg = M.telescope_selection_bg, fg = M.fg })
-            hl(0, "PmenuSbar", { bg = M.darker })
-            hl(0, "PmenuThumb", { bg = M.secondary })
-
-            hl(0, "BlinkCmpMenu", { bg = M.darker, fg = M.fg })
-            hl(0, "BlinkCmpMenuBorder", { fg = M.secondary, bg = M.darker })
-            hl(0, "BlinkCmpMenuSelection", { bg = M.telescope_selection_bg, fg = M.fg })
-            hl(0, "BlinkCmpLabel", { fg = M.fg })
-            hl(0, "BlinkCmpLabelDeprecated", { fg = M.cursorline_fg, strikethrough = true })
-            hl(0, "BlinkCmpLabelMatch", { fg = M.primary, bold = true })
-            hl(0, "BlinkCmpKind", { fg = M.secondary })
-            hl(0, "BlinkCmpDoc", { bg = M.darker, fg = M.fg })
-            hl(0, "BlinkCmpDocBorder", { fg = M.secondary, bg = M.darker })
-
-            hl(0, "CmpNormal", { link = "BlinkCmpMenu" })
-            hl(0, "CmpBorder", { link = "BlinkCmpMenuBorder" })
-            hl(0, "CmpSel", { link = "BlinkCmpMenuSelection" })
-            hl(0, "CmpItemAbbr", { link = "BlinkCmpLabel" })
-            hl(0, "CmpItemAbbrDeprecated", { link = "BlinkCmpLabelDeprecated" })
-            hl(0, "CmpItemAbbrMatch", { link = "BlinkCmpLabelMatch" })
-            hl(0, "CmpItemAbbrMatchFuzzy", { link = "BlinkCmpLabelMatch" })
-            hl(0, "CmpItemKind", { link = "BlinkCmpKind" })
-            hl(0, "CmpDoc", { link = "BlinkCmpDoc" })
-            hl(0, "CmpDocBorder", { link = "BlinkCmpDocBorder" })
-
-            for _, kind in ipairs({
-                "Text", "Method", "Function", "Constructor", "Field", "Variable", "Class",
-                "Interface", "Module", "Property", "Unit", "Value", "Enum", "Keyword",
-                "Snippet", "Color", "File", "Reference", "Folder", "EnumMember",
-                "Constant", "Struct", "Event", "Operator", "TypeParameter", "Copilot",
-            }) do
-                hl(0, "BlinkCmpKind" .. kind, { link = "BlinkCmpKind" })
-                hl(0, "CmpItemKind" .. kind, { link = "BlinkCmpKind" })
-            end
         end,
     },
 
-    -- ── Autopairs ──────────────────────────────────────────────────────────
     {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
         opts = { check_ts = true },
     },
 
-    -- ── Telescope ──────────────────────────────────────────────────────────
     {
         "nvim-telescope/telescope.nvim",
-        cmd = "Telescope",
         config = function()
             local actions = require("telescope.actions")
             require("telescope").setup({
@@ -206,7 +177,6 @@ return {
         end,
     },
 
-    -- ── Harpoon ────────────────────────────────────────────────────────────
     {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
@@ -275,12 +245,6 @@ return {
             vim.api.nvim_create_autocmd("VimEnter", {
                 callback = open_nvim_tree,
             })
-
-            local cc_ok, cc = pcall(require, "carboncopy")
-            if cc_ok and cc.bg then
-                vim.api.nvim_set_hl(0, "NvimTreeStatuslineNc", { fg = cc.bg, bg = cc.bg })
-                vim.api.nvim_set_hl(0, "NvimTreeStatusLine", { fg = cc.bg, bg = cc.bg })
-            end
         end,
     },
 
