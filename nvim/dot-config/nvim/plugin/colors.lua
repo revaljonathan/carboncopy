@@ -13,6 +13,8 @@ end
 
 local hl = vim.api.nvim_set_hl
 
+vim.api.nvim_set_hl(0, "LazyNormal", { bg = cc.darker })
+
 hl(0, "Normal", { fg = cc.fg, bg = "NONE" })
 hl(0, "NormalFloat", { fg = cc.fg, bg = cc.cursorline_bg })
 hl(0, "FloatBorder", { fg = cc.telescope_border or cc.primary, bg = cc.cursorline_bg })

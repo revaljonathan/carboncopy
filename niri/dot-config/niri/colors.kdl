@@ -18,7 +18,7 @@ layout {
 		urgent-color   "#ff99c5"
 	}
 	insert-hint {
-		color "#e28413"
+		color "#f29435"
 	}
 }
 overview {
@@ -28,6 +28,6 @@ overview {
 recent-windows {
 	highlight {
 		active-color "#78a9ff"
-		urgent-color "#fa4d56"
+		urgent-color "#fb656d"
 	}
 }

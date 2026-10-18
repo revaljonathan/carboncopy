@@ -4,7 +4,7 @@ thx ibm for most of the palettes, will steal again
 
 ## The palettes
 
-#fa4d56 -> red, for error
+#fb656d -> red, for error
 
 #ff8389 -> lighter red
 
@@ -14,11 +14,11 @@ thx ibm for most of the palettes, will steal again
 
 #ee5396 -> very saturated pink
 
-#cff27e -> lime green, correct/succeed/etc
+#9cf7a8 ->green, correct/succeed/etc
 
-#e3ff9e -> lighter lime green
+#9cffa9 -> lighter green
 
-#e28413 -> peach, or amber, whatever. used for warning
+#f29435 -> peach, or amber, whatever. used for warning
 
 #ffb066 -> lighter peach
 
@@ -36,7 +36,7 @@ thx ibm for most of the palettes, will steal again
 
 #f2f4f8 -> fg, main foreground color
 
-#e0e0e0 -> fg1, darker fg variant
+#c6c6c6 -> fg1, darker fg variant
 
 #c6c6c6 -> fg2, even darker fg variant
 
