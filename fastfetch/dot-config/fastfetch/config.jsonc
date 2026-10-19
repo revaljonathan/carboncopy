@@ -118,6 +118,11 @@
             "keyColor": "cyan"
         },
         {
+            "type": "swap",
+            "key": "Swap:   ",
+            "keyColor": "cyan"
+        },
+        {
             "type": "uptime",
             "key": "Uptime: ",
             "keyColor": "cyan"

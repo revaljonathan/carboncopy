@@ -15,8 +15,8 @@
 
 	* {
 		--text-color:							#f2f4f8 !important;
-		--color-accent-primary:					light-dark(#ff99c555, #ff7eb6) !important;
-		--color-accent-secondary:				light-dark(#ee539655, #ee5396) !important;
+		--color-accent-primary:					light-dark(#ff99c555, #ff8dbf) !important;
+		--color-accent-secondary:				light-dark(#ff8dbf55, #ff8dbf) !important;
 	}
 
 	* {
@@ -41,8 +41,8 @@
 		--color-cyan-80: #3ddbd9 !important;
 		--color-cyan-90: #3ddbd9 !important;
 		--color-gray-0:  #f2f4f8 !important;
-		--color-gray-05: #c6c6c3 !important;
-		--color-gray-10: #c6c6c3 !important;
+		--color-gray-05: #c6c6ca !important;
+		--color-gray-10: #c6c6ca !important;
 		--color-gray-15: #8d8d90 !important;
 		--color-gray-20: #7a7a7d !important;
 		--color-gray-25: #6f6f6f !important;

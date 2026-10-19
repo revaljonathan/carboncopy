@@ -38,6 +38,6 @@ M.syn_constant            = "#f29435"
 M.syn_comment             = "#7a7a7d"
 M.syn_variable            = "#f2f4f8"
 M.syn_operator            = "#3ddbd9"
-M.syn_special             = "#ff7eb6"
+M.syn_special             = "#ff8dbf"
 
 return M

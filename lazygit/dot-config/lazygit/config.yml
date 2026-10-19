@@ -1,0 +1,22 @@
+gui:
+  border: 'single'
+  sidePanels:
+    - [files, worktrees, submodules]
+    - [branches, remotes, tags]
+    - [commits, reflog]
+    - [stash]
+
+  theme:
+    activeBorderColor:
+      - 'yellow'
+
+    inactiveBorderColor:
+      - '#39393c'
+
+    selectedLineBgColor:
+      - '#39393c'
+
+    selectedLineFgColor:
+      - bold
+    optionsTextColor:
+      - '#8d8d90' 

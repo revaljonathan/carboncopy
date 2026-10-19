@@ -270,7 +270,7 @@ return {
                 highlights = {
                     fill               = { bg = "NONE" },
                     background         = { bg = cc.bg, fg = cc.fg },
-                    buffer_selected    = { fg = cc.bg, bg = cc.primary, bold = true, italic = false },
+                    buffer_selected    = { fg = cc.bg, bg = cc.primary, bold = false, italic = false },
                     buffer_visible     = { bg = cc.bg, fg = cc.secondary },
                     separator          = { fg = cc.bg, bg = cc.bg },
                     separator_selected = { fg = cc.bg, bg = cc.primary },
