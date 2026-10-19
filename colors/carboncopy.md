@@ -14,7 +14,7 @@ thx ibm for most of the palettes, will steal again
 
 #ee5396 -> very saturated pink
 
-#9cf7a8 ->green, correct/succeed/etc
+#99e3a5 ->green, correct/succeed/etc
 
 #9cffa9 -> lighter green
 
@@ -36,20 +36,20 @@ thx ibm for most of the palettes, will steal again
 
 #f2f4f8 -> fg, main foreground color
 
-#c6c6c6 -> fg1, darker fg variant
+#c6c6c3 -> fg1, darker fg variant
 
-#c6c6c6 -> fg2, even darker fg variant
+#c6c6c3 -> fg2, even darker fg variant
 
 ## Greyscales for outlines, etc
 
-#8d8d8d -> Outline0, brightest outline variant
+#8d8d90 -> Outline0, brightest outline variant
 
-#7a7a7a -> Outline1, i use this mostly for comments
+#7a7a7d -> Outline1, i use this mostly for comments
 
-#525252 -> Outline2, used for muted stuff
+#525255 -> Outline2, used for muted stuff
 
-#393939 -> Outline3, used for unassuming border color, also used for selected text background (visual mode in nvim, etc)
+#39393c -> Outline3, used for unassuming border color, also used for selected text background (visual mode in nvim, etc)
 
-#262626 -> Outline4, i usually use this for secondary background, notifications etc
+#262629 -> Outline4, i usually use this for secondary background, notifications etc
 
-#161616 -> base, main background color
+#161619 -> base, main background color
