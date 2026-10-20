@@ -19,4 +19,4 @@ gui:
     selectedLineFgColor:
       - bold
     optionsTextColor:
-      - '#8d8d90' 
+      - '#9a9a9e' 

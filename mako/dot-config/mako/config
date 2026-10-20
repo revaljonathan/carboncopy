@@ -29,7 +29,7 @@ on-button-right=dismiss-all
 on-touch=invoke-default-action
 
 layer=top
-format=<span foreground='#8d8d90'>%a</span>\n<b>%s</b>\n<span>%b</span>
+format=<span foreground='#9a9a9e'>%a</span>\n<b>%s</b>\n<span>%b</span>
 background-color=#262629
 text-color=#f2f4f8
 border-color=#525255
