@@ -1,26 +1,19 @@
 {
-    "base":     "#161619",
-    "fg0":      "#f2f4f8",
-    "fg1":      "#c6c6ca",
-    "red0":     "#ff8389",
-    "red1":     "#fb656d",
-    "green0":   "#bcffd9",
-    "green1":   "#99e3a5",
-    "amber0":   "#ffb866",
-    "amber1":   "#f29435",
-    "blue0":    "#a6c8ff",
-    "blue1":    "#78a9ff",
-    "purple0":  "#d4bbff",
-    "purple1":  "#be95ff",
-    "cyan0":    "#6ff0ee",
-    "cyan1":    "#3ddbd9",
-    "pink0":    "#ff99c5",
-    "pink1":    "#ff8dbf",
-    "outline0": "#8d8d90",
-    "outline1": "#7a7a7d",
-    "outline2": "#525255",
-    "outline3": "#39393c",
-    "outline4": "#262629"
+    "black-1":   "#161619",
+    "black-2":   "#262629",
+    "black-3":   "#39393c",
+    "white-1":   "#f2f4f8",
+    "white-2":   "#c6c6ca",
+    "red":       "#f07077",
+    "green":     "#9fdda9",
+    "amber":     "#e49443",
+    "blue":      "#82acf5",
+    "purple":    "#c09df7",
+    "cyan":      "#76d7d6",
+    "pink":      "#f7a1c6",
+    "grey-1":    "#8d8d90",
+    "grey-2":    "#7a7a7d",
+    "grey-2":    "#525255"
 },
 
 {
@@ -35,14 +28,14 @@
         "muted": "#8d8d90"
     },
     "accent": {
-        "primary": "#ff99c5",
-        "secondary": "#78a9ff",
-        "tertiary": "#be95ff"
+        "primary": "#f7a1c6",
+        "secondary": "#82acf5",
+        "tertiary": "#c09df7"
     },
     "state": {
-        "error": "#fb656d",
-        "warning": "#f29435",
-        "success": "#99e3a5"
+        "error": "#f07077",
+        "warning": "#e49443",
+        "success": "#9fdda9"
     },
     "etc": {
         "comment": "#7a7a7d"
