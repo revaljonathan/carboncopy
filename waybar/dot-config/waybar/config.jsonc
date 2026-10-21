@@ -67,15 +67,7 @@
 },
 "niri/workspaces": {
     "on-click": "activate",
-    "all-outputs": true,
-    "persistent-workspaces": {
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [],
-        "5": []
-    },
-    "format": "{icon}"
+    "all-outputs": true
 },
 
     "clock": {
@@ -117,8 +109,8 @@
         "format-ethernet": "Net: {cidr}",
         "tooltip-format": "Network Information\n\nSSID  : {essid}\nIP    : {ipaddr}\nBand  : {frequency} MHz\nSignal: {signalStrength}%   \nvia   : {ifname}",
         "format-linked": "{ifname} (No IP) 󰊗",
-        "format-disconnected": "Net: error",
-        "on-click": "footclient --class=clip impala",
+        "format-disconnected": "Net: Disconnected",
+        "on-click": "footclient --class=clip impala"
     },
 
     "wireplumber": {
@@ -133,6 +125,6 @@
         "title-len": 55,
         "tooltip": false,
         "artist-len": 25,
-            "format-paused": "{title} - {artist}",
-        },
+            "format-paused": "{title} - {artist}"
+        }
 }
