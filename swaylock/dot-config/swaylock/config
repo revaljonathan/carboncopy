@@ -21,7 +21,7 @@ key-hl-color=82acf5
 
 layout-bg-color=00000000
 layout-border-color=00000000
-layout-text-color=f2f4f8
+layout-text-color=e8edf8
 
 line-color=00000000
 line-clear-color=00000000
@@ -37,7 +37,7 @@ ring-wrong-color=f07077
 
 separator-color=00000000
 
-text-color=f2f4f8
+text-color=e8edf8
 text-clear-color=9fdda9
 text-caps-lock-color=595959
 text-ver-color=9fdda9

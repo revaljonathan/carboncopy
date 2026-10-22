@@ -1,7 +1,7 @@
 @-moz-document url-prefix("about:") {
 	body {
 		background-color: #161619 !important;
-		color: #f2f4f8 !important;
+		color: #e8edf8 !important;
 	}
 
 	* {
@@ -14,7 +14,7 @@
 	}
 
 	* {
-		--text-color:							#f2f4f8 !important;
+		--text-color:							#e8edf8 !important;
 		--color-accent-primary:					light-dark(#f7a1c655, #ff8dbf) !important;
 		--color-accent-secondary:				light-dark(#ff8dbf55, #ff8dbf) !important;
 	}
@@ -40,7 +40,7 @@
 		--color-cyan-70: #76d7d6 !important;
 		--color-cyan-80: #76d7d6 !important;
 		--color-cyan-90: #76d7d6 !important;
-		--color-gray-0:  #f2f4f8 !important;
+		--color-gray-0:  #e8edf8 !important;
 		--color-gray-05: #c6c6ca !important;
 		--color-gray-10: #c6c6ca !important;
 		--color-gray-15: #9a9a9e !important;

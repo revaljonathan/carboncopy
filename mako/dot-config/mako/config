@@ -31,7 +31,7 @@ on-touch=invoke-default-action
 layer=top
 format=<span foreground='#9a9a9e'>%a</span>\n<b>%s</b>\n<span>%b</span>
 background-color=#262629
-text-color=#f2f4f8
+text-color=#e8edf8
 border-color=#525255
 progress-color=over #262629
 
