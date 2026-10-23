@@ -371,7 +371,7 @@ return {
                             "filename",
                             path = 0,
                             color = { fg = cc.fg, bg = cc.darker },
-                            symbols = { modified = "●", readonly = "✘", unnamed = "[No Name]" }
+                            symbols = { modified = "● ", readonly = "✘ ", unnamed = "[No Name]" }
                         },
                     },
                     lualine_c = {},

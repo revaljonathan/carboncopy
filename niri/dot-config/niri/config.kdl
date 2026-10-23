@@ -12,4 +12,8 @@ hotkey-overlay {
     skip-at-startup
 }
 
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
 screenshot-path "~/Pictures/ss/%d-%m-%Y_%H:%M.png"
