@@ -18,7 +18,7 @@ layout {
 		urgent-color   "#f7a1c6"
 	}
 	insert-hint {
-		color "#e49443"
+		color "#e49a4f"
 	}
 }
 overview {
