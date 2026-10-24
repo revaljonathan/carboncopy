@@ -6,16 +6,16 @@ clock
 timestr=%H:%M:%S
 datestr=%a, %b %e
 
-color=161619ff
+color=16161cff
 bs-hl-color=f07077ff
 caps-lock-bs-hl-color=f07077
 caps-lock-key-hl-color=82acf5
 
-inside-color=161619
-inside-clear-color=161619
-inside-caps-lock-color=161619
-inside-ver-color=161619
-inside-wrong-color=161619
+inside-color=16161c
+inside-clear-color=16161c
+inside-caps-lock-color=16161c
+inside-ver-color=16161c
+inside-wrong-color=16161c
 
 key-hl-color=82acf5
 
@@ -29,7 +29,7 @@ line-caps-lock-color=00000000
 line-ver-color=00000000
 line-wrong-color=00000000
 
-ring-color=39393c
+ring-color=39393f
 ring-clear-color=9fdda9
 ring-caps-lock-color=595959
 ring-ver-color=9fdda9

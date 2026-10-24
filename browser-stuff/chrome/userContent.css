@@ -1,6 +1,6 @@
 @-moz-document url-prefix("about:") {
 	body {
-		background-color: #161619 !important;
+		background-color: #16161c !important;
 		color: #e8edf8 !important;
 	}
 
@@ -10,7 +10,7 @@
 
 	button:hover, .button:hover {
 		background-color: #f7a1c6 !important;
-		color: #161619 !important;
+		color: #16161c !important;
 	}
 
 	* {
@@ -41,22 +41,22 @@
 		--color-cyan-80: #76c7d7 !important;
 		--color-cyan-90: #76c7d7 !important;
 		--color-gray-0:  #e8edf8 !important;
-		--color-gray-05: #c6c6ca !important;
-		--color-gray-10: #c6c6ca !important;
-		--color-gray-15: #9a9a9e !important;
-		--color-gray-20: #7a7a7d !important;
+		--color-gray-05: #c6c6cd !important;
+		--color-gray-10: #c6c6cd !important;
+		--color-gray-15: #9a9aa1 !important;
+		--color-gray-20: #7a7a80 !important;
 		--color-gray-25: #6f6f6f !important;
 		--color-gray-30: #636363 !important;
 		--color-gray-35: #5a5a5a !important;
-		--color-gray-40: #525255 !important;
+		--color-gray-40: #525258 !important;
 		--color-gray-45: #454545 !important;
-		--color-gray-50: #39393c !important;
+		--color-gray-50: #39393f !important;
 		--color-gray-55: #2f2f2f !important;
-		--color-gray-60: #262629 !important;
+		--color-gray-60: #26262c !important;
 		--color-gray-65: #1f1f1f !important;
 		--color-gray-70: #1b1b1b !important;
 		--color-gray-75: #181818 !important;
-		--color-gray-80: #161619 !important;
+		--color-gray-80: #16161c !important;
 		--color-gray-85: #141414 !important;
 		--color-gray-90: #121212 !important;
 		--color-green-0:  #9fdda9 !important;
@@ -142,16 +142,16 @@
 	}
 
 	* {
-		--background-color-box:					#262629 !important;
-		--background-color-box-info:			#262629 !important;
-		--background-color-information:		    #39393c !important;
-		--background-color-canvas:				#161619 !important;
-		--border-color:							#39393c !important;
-		--border-color-deemphasized:			#39393c !important;
-		--button-background-color-muted:		#39393c !important;
-		--button-text-color-ghost-disabled:		#7a7a7d !important;
+		--background-color-box:					#26262c !important;
+		--background-color-box-info:			#26262c !important;
+		--background-color-information:		    #39393f !important;
+		--background-color-canvas:				#16161c !important;
+		--border-color:							#39393f !important;
+		--border-color-deemphasized:			#39393f !important;
+		--button-background-color-muted:		#39393f !important;
+		--button-text-color-ghost-disabled:		#7a7a80 !important;
 		--button-border:						2px solid var(--border-color) !important;
-		--table-row-background-color-alternate:	#262629 !important;
+		--table-row-background-color-alternate:	#26262c !important;
 		--text-color-accent-primary-selected:	var(--text-color) !important;
 	}
 

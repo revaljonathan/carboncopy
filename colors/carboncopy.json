@@ -1,13 +1,13 @@
 {
-    "black-1":   "#161619",
-    "black-2":   "#262629",
-    "black-3":   "#39393c",
+    "black-1":   "#16161c",
+    "black-2":   "#26262c",
+    "black-3":   "#39393f",
 
-    "grey-1":    "#525255",
-    "grey-2":    "#7a7a7d",
-    "grey-3":    "#9a9a9e",
+    "grey-1":    "#525258",
+    "grey-2":    "#7a7a80",
+    "grey-3":    "#9a9aa1",
 
-    "white-1":   "#c6c6ca",
+    "white-1":   "#c6c6cd",
     "white-2":   "#e8edf8",
 
     "pink":      "#f7a1c6",
