@@ -62,3 +62,4 @@ alias aq='asciiquarium'
 alias plis='sudo'
 alias b=btop
 alias g=lazygit
+alias ts=tailscale

@@ -1,3 +1,4 @@
+include "~/.config/niri/env.kdl"
 include "~/.config/niri/colors.kdl"
 include "~/.config/niri/inputs.kdl"
 include "~/.config/niri/outputs.kdl"

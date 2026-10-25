@@ -8,13 +8,13 @@
     "grey-3":    "#9a9aa1",
 
     "white-1":   "#c6c6cd",
-    "white-2":   "#e8edf8",
+    "white-2":   "#edf1f8",
 
     "pink":      "#f7a1c6",
     "red":       "#f07077",
     "green":     "#9fdda9",
-    "amber":     "#e49a4f",
+    "amber":     "#e49445",
     "blue":      "#82acf5",
     "purple":    "#c09df7",
-    "cyan":      "#76c7d7"
+    "cyan":      "#76d7d7"
 }
