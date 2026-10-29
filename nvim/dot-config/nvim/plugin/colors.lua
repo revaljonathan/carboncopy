@@ -85,7 +85,9 @@ end
 
 
 if cc.telescope_border then
-    hl(0, "TelescopeBorder", { fg = cc.telescope_border })
+    hl(0, "TelescopeBorder", { fg = cc.darker })
+    hl(0, "TelescopeNormal", { bg = cc.darker })
+    hl(0, "TelescopePromptNormal", { bg = "NONE" })
     hl(0, "TelescopePromptBorder", { fg = cc.telescope_prompt_border or cc.primary })
     hl(0, "TelescopePromptTitle", { fg = cc.telescope_prompt_title or cc.primary, bold = true })
     hl(0, "TelescopeSelection", { bg = cc.telescope_selection_bg, fg = cc.telescope_selection_fg })

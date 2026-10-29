@@ -143,6 +143,7 @@ return {
             local actions = require("telescope.actions")
             require("telescope").setup({
                 defaults = {
+                    borders = false,
                     mappings = {
                         i = {
                             ["<C-k>"] = actions.move_selection_previous,
