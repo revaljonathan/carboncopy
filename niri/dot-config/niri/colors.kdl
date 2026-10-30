@@ -28,6 +28,6 @@ overview {
 recent-windows {
 	highlight {
 		active-color "#81a6e7"
-		urgent-color "#e08085"
+		urgent-color "#e06666"
 	}
 }

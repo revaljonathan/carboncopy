@@ -6,7 +6,7 @@ M.fg                      = "#edf0f5"
 M.primary                 = "#ecacc8"
 M.secondary               = "#82cbcb"
 M.tertiary                = "#c3a8ec"
-M.error                   = "#e08085"
+M.error                   = "#e06666"
 
 M.cursorline_bg           = "#39393f"
 M.darker                  = "#26262c"
