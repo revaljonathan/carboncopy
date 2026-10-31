@@ -10,8 +10,14 @@
     padding: 0;
 }
 
+tooltip {
+    background: @outline4;
+    border: 1px solid @outline2;
+
+}
+
 tooltip label {
-    font-family: "carbonsevka";
+    font-family: "carbonsevka", monospace;
     color: @fg;
 }
 
@@ -31,10 +37,6 @@ window#waybar {
     transition: all 150ms ease;
 }
 
-#workspaces button.empty {
-    background: transparent;
-    color: @outline2;
-}
 
 #workspaces button.focused {
     background: transparent;

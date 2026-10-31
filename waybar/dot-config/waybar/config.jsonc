@@ -1,13 +1,14 @@
 {
     "layer": "top", 
     "position": "top", 
-    "height": 28,
+    "height": 26,
     "spacing": 4, 
     "margin-top": 0,
     "margin-bottom": 0,
 
     "modules-left": [
         "niri/workspaces",
+        "custom/sep",
         "tray",
         "custom/sep",
         "niri/window",
@@ -63,6 +64,7 @@
     "tooltip": false
 },
 "niri/window": {
+  "tooltip": false,
   "max-length": 50
 },
 "niri/workspaces": {
