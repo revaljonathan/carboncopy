@@ -12,6 +12,8 @@ export FZF_DEFAULT_OPTS="
   --no-separator \
   --color=base16,fg+:blue,bg+:black,border:bright-black,pointer:blue
 "
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
+
 export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH=$HOME/.go
 export PATH="$GOPATH/bin:$PATH"

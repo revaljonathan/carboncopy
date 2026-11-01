@@ -62,7 +62,7 @@ alias plis='sudo'
 alias b=btop
 alias g=lazygit
 alias ts=tailscale
-alias rcp=rsync -avzp
+alias rcp='rsync -avzp'
 
 alias oc='opencode'
 alias pobs='__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia obs & disown'
