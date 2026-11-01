@@ -70,4 +70,4 @@ alias ppd=powerprofilesctl
 
 
 
-alias gpl=git pull
+alias gpl='git pull'
