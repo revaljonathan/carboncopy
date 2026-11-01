@@ -2,13 +2,16 @@
 export LS_COLORS=""
 export COLORTERM=truecolor
 export BAT_THEME="base16"
-export "MICRO_TRUECOLOR=1"
-export EZA_CONFIG_DIR="$HOME/.config/eza/"
 export EDITOR=nvim
 export VISUAL=nvim
 export TERMINAL=kitty
 export MANPAGER="nvim +Man!"
-
+export FZF_DEFAULT_OPTS="
+  --layout=reverse \
+  --border=sharp \
+  --no-separator \
+  --color=base16,fg+:yellow,bg+:black,border:bright-black,pointer:yellow
+"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH=$HOME/.go
 export PATH="$GOPATH/bin:$PATH"
