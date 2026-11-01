@@ -11,7 +11,7 @@ configuration {
 }
 
 * {
-    base:     #16161c;
+    base:     #161619;
     text:     #d3dae6;
     primary: #ecacc8;
     border: #39393f;

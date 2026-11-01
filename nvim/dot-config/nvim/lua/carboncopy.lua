@@ -1,6 +1,6 @@
 local M                   = {}
 
-M.bg                      = "#16161c"
+M.bg                      = "#161619"
 M.fg                      = "#d3dae6"
 
 M.primary                 = "#ecacc8"

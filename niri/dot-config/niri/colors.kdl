@@ -1,5 +1,5 @@
 layout {
-	background-color "#16161c"
+	background-color "#161619"
 
 	focus-ring {
 		active-color "#ecacc8"
@@ -22,7 +22,7 @@ layout {
 	}
 }
 overview {
-	backdrop-color "#16161c"
+	backdrop-color "#161619"
 }
 
 recent-windows {

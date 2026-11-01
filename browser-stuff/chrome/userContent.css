@@ -1,6 +1,6 @@
 @-moz-document url-prefix("about:") {
 	body {
-		background-color: #16161c !important;
+		background-color: #161619 !important;
 		color: #d3dae6 !important;
 	}
 
@@ -10,7 +10,7 @@
 
 	button:hover, .button:hover {
 		background-color: #ecacc8 !important;
-		color: #16161c !important;
+		color: #161619 !important;
 	}
 
 	* {
@@ -56,7 +56,7 @@
 		--color-gray-65: #1f1f1f !important;
 		--color-gray-70: #1b1b1b !important;
 		--color-gray-75: #181818 !important;
-		--color-gray-80: #16161c !important;
+		--color-gray-80: #161619 !important;
 		--color-gray-85: #141414 !important;
 		--color-gray-90: #121212 !important;
 		--color-green-0:  #a7d5ae !important;
@@ -145,7 +145,7 @@
 		--background-color-box:					#26262c !important;
 		--background-color-box-info:			#26262c !important;
 		--background-color-information:		    #39393f !important;
-		--background-color-canvas:				#16161c !important;
+		--background-color-canvas:				#161619 !important;
 		--border-color:							#39393f !important;
 		--border-color-deemphasized:			#39393f !important;
 		--button-background-color-muted:		#39393f !important;
