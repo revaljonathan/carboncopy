@@ -10,7 +10,7 @@ export FZF_DEFAULT_OPTS="
   --layout=reverse \
   --border=sharp \
   --no-separator \
-  --color=base16,fg+:yellow,bg+:black,border:bright-black,pointer:yellow
+  --color=base16,fg+:blue,bg+:black,border:bright-black,pointer:blue
 "
 export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH=$HOME/.go
