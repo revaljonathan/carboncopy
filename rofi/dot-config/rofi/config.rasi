@@ -13,7 +13,7 @@ configuration {
 * {
     base:     #121619;
     text:     #d3dae6;
-    primary: #ffafd2;
+    primary: #ffbad8;
     border: #343a3f;
     outline: #4d5358;
 
