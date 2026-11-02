@@ -9,7 +9,7 @@ case "$selected" in
         ~/.local/bin/dynalock.sh
         ;;
     "Suspend")
-        systemctl suspend
+        ~/.local/bin/sleepcheck.sh
         ;;
     "Reboot")
         systemctl reboot

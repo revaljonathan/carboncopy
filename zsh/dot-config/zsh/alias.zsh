@@ -1,7 +1,7 @@
 alias sudo='doas'
 # alias up='yay --diffmenu --answerdiff All --save -Syu'
 alias up='yay -Syu'
-alias i='sudo pacman -Syu'
+alias i='sudo pacman -S'
 alias s='yay -Ss'
 alias clean='paccache -rk 1 && yay -Yc'
 alias pacnews='arch_news_check'
