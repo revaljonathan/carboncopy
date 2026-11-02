@@ -7,9 +7,9 @@ timestr=%H:%M:%S
 datestr=%a, %b %e
 
 color=121619ff
-bs-hl-color=ff8389ff
-caps-lock-bs-hl-color=ff8389
-caps-lock-key-hl-color=80aeff
+bs-hl-color=ff7d83ff
+caps-lock-bs-hl-color=ff7d83
+caps-lock-key-hl-color=70a5ff
 
 inside-color=121619
 inside-clear-color=121619
@@ -17,7 +17,7 @@ inside-caps-lock-color=121619
 inside-ver-color=121619
 inside-wrong-color=121619
 
-key-hl-color=80aeff
+key-hl-color=70a5ff
 
 layout-bg-color=00000000
 layout-border-color=00000000
@@ -33,7 +33,7 @@ ring-color=343a3f
 ring-clear-color=a7d5ae
 ring-caps-lock-color=595959
 ring-ver-color=a7d5ae
-ring-wrong-color=ff8389
+ring-wrong-color=ff7d83
 
 separator-color=00000000
 
@@ -41,4 +41,4 @@ text-color=d3dae6
 text-clear-color=a7d5ae
 text-caps-lock-color=595959
 text-ver-color=a7d5ae
-text-wrong-color=ff8389
+text-wrong-color=ff7d83

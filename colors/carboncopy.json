@@ -10,11 +10,11 @@
     "white-1":   "#dde1e6",
     "white-2":   "#d3dae6",
 
-    "pink":      "#ffa3cb",
-    "red":       "#ff8389",
+    "pink":      "#ffb5d5",
+    "red":       "#ff7d83",
     "green":     "#a7d5ae",
     "amber":     "#d09a63",
-    "blue":      "#80aeff",
-    "purple":    "#c5a1ff",
+    "blue":      "#70a5ff",
+    "purple":    "#cdb0ff",
     "cyan":      "#82cfff"
 }
