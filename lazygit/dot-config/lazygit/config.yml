@@ -11,12 +11,12 @@ gui:
       - 'yellow'
 
     inactiveBorderColor:
-      - '#39393f'
+      - '#343a3f'
 
     selectedLineBgColor:
-      - '#39393f'
+      - '#343a3f'
 
     selectedLineFgColor:
       - bold
     optionsTextColor:
-      - '#9a9aa1' 
+      - '#878d96' 

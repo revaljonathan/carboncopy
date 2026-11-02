@@ -7,7 +7,7 @@
 #root.root {--general-border-radius: 0px;}
 
 .Tab[data-active="true"] .body {
-	border: 2px solid #ecacc8	 !important;
+	border: 2px solid #ffa3cb	 !important;
 	border-radius: 0px;
 }
 
@@ -20,5 +20,5 @@
 }
 
 .NavigationBar .nav-item[data-active="true"] {
-	border: 1px solid #ecacc8 !important;
+	border: 1px solid #ffa3cb !important;
 }
