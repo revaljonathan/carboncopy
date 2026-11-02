@@ -3,7 +3,7 @@ local M                   = {}
 M.bg                      = "#121619"
 M.fg                      = "#d3dae6"
 
-M.primary                 = "#ffb5d5"
+M.primary                 = "#ffa6ac"
 M.secondary               = "#82cfff"
 M.tertiary                = "#cdb0ff"
 M.error                   = "#ff7d83"
@@ -33,11 +33,11 @@ M.branch                  = "#a7d5ae"
 M.syn_keyword             = "#cdb0ff"
 M.syn_func                = "#94bdff"
 M.syn_string              = "#a7d5ae"
-M.syn_type                = "#ffb5d5"
+M.syn_type                = "#ffa6ac"
 M.syn_constant            = "#d09a63"
 M.syn_comment             = "#697077"
 M.syn_variable            = "#d3dae6"
 M.syn_operator            = "#82cfff"
-M.syn_special             = "#ffb5d5"
+M.syn_special             = "#ffa6ac"
 
 return M

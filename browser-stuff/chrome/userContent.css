@@ -9,13 +9,13 @@
 	}
 
 	button:hover, .button:hover {
-		background-color: #ffb5d5 !important;
+		background-color: #ffa6ac !important;
 		color: #121619 !important;
 	}
 
 	* {
 		--text-color:							#d3dae6 !important;
-		--color-accent-primary:					light-dark(#ffb5d555, #ff8dbf) !important;
+		--color-accent-primary:					light-dark(#ffa6ac55, #ff8dbf) !important;
 		--color-accent-secondary:				light-dark(#ff8dbf55, #ff8dbf) !important;
 	}
 
@@ -79,16 +79,16 @@
 		--color-orange-70: #d09a63 !important;
 		--color-orange-80: #d09a63 !important;
 		--color-orange-90: #d09a63 !important;
-		--color-pink-0:  #ffb5d5 !important;
-		--color-pink-10: #ffb5d5 !important;
-		--color-pink-20: #ffb5d5 !important;
-		--color-pink-30: #ffb5d5 !important;
-		--color-pink-40: #ffb5d5 !important;
-		--color-pink-50: #ffb5d5 !important;
-		--color-pink-60: #ffb5d5 !important;
-		--color-pink-70: #ffb5d5 !important;
-		--color-pink-80: #ffb5d5 !important;
-		--color-pink-90: #ffb5d5 !important;
+		--color-pink-0:  #ffa6ac !important;
+		--color-pink-10: #ffa6ac !important;
+		--color-pink-20: #ffa6ac !important;
+		--color-pink-30: #ffa6ac !important;
+		--color-pink-40: #ffa6ac !important;
+		--color-pink-50: #ffa6ac !important;
+		--color-pink-60: #ffa6ac !important;
+		--color-pink-70: #ffa6ac !important;
+		--color-pink-80: #ffa6ac !important;
+		--color-pink-90: #ffa6ac !important;
 		--color-purple-0:  #cdb0ff !important;
 		--color-purple-10: #cdb0ff !important;
 		--color-purple-20: #cdb0ff !important;
