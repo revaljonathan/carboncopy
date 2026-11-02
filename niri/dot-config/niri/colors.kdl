@@ -27,7 +27,7 @@ overview {
 
 recent-windows {
 	highlight {
-		active-color "#70a5ff"
+		active-color "#94bdff"
 		urgent-color "#ff7d83"
 	}
 }

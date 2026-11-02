@@ -9,7 +9,7 @@ datestr=%a, %b %e
 color=121619ff
 bs-hl-color=ff7d83ff
 caps-lock-bs-hl-color=ff7d83
-caps-lock-key-hl-color=70a5ff
+caps-lock-key-hl-color=94bdff
 
 inside-color=121619
 inside-clear-color=121619
@@ -17,7 +17,7 @@ inside-caps-lock-color=121619
 inside-ver-color=121619
 inside-wrong-color=121619
 
-key-hl-color=70a5ff
+key-hl-color=94bdff
 
 layout-bg-color=00000000
 layout-border-color=00000000
