@@ -11,11 +11,11 @@ configuration {
 }
 
 * {
-    base:     #121619;
+    base:     #15171d;
     text:     #d3dae6;
     primary: #ffbad8;
-    border: #343a3f;
-    outline: #4d5358;
+    border: #373d43;
+    outline: #50545c;
 
     separatorcolor: transparent;
     background-color: transparent;

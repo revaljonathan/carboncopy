@@ -29,11 +29,11 @@ on-button-right=dismiss-all
 on-touch=invoke-default-action
 
 layer=top
-format=<span foreground='#878d96'>%a</span>\n<b>%s</b>\n<span>%b</span>
-background-color=#21272a
+format=<span foreground='#8a8e9a'>%a</span>\n<b>%s</b>\n<span>%b</span>
+background-color=#24282e
 text-color=#d3dae6
-border-color=#4d5358
-progress-color=over #21272a
+border-color=#50545c
+progress-color=over #24282e
 
 [urgency=high]
 border-color=#ff7d83    

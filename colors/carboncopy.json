@@ -1,19 +1,18 @@
 {
-    "black-1":   "#121619",
-    "black-2":   "#21272a",
-    "black-3":   "#343a3f",
+    "black-1":   "#15171d",
+    "black-2":   "#24282e",
+    "black-3":   "#373d43",
 
-    "grey-1":    "#4d5358",
-    "grey-2":    "#697077",
-    "grey-3":    "#878d96",
+    "grey-1":    "#50545c",
+    "grey-2":    "#6c717b",
+    "grey-3":    "#8a8e9a",
 
-    "white-1":   "#dde1e6",
-    "white-2":   "#d3dae6",
+    "white":     "#d3dae6",
 
     "pink":      "#ffbad8",
     "red":       "#ff7d83",
     "green":     "#a7d5ae",
-    "amber":     "#d09a63",
+    "peach":     "#ffb987",
     "blue":      "#94bdff",
     "purple":    "#cdb0ff",
     "cyan":      "#82cfff"

@@ -1,6 +1,6 @@
 @-moz-document url-prefix("about:") {
 	body {
-		background-color: #121619 !important;
+		background-color: #15171d !important;
 		color: #d3dae6 !important;
 	}
 
@@ -10,7 +10,7 @@
 
 	button:hover, .button:hover {
 		background-color: #ffbad8 !important;
-		color: #121619 !important;
+		color: #15171d !important;
 	}
 
 	* {
@@ -41,22 +41,22 @@
 		--color-cyan-80: #82cfff !important;
 		--color-cyan-90: #82cfff !important;
 		--color-gray-0:  #d3dae6 !important;
-		--color-gray-05: #dde1e6 !important;
-		--color-gray-10: #dde1e6 !important;
-		--color-gray-15: #878d96 !important;
-		--color-gray-20: #697077 !important;
+		--color-gray-05: #8a8e9a !important;
+		--color-gray-10: #8a8e9a !important;
+		--color-gray-15: #8a8e9a !important;
+		--color-gray-20: #6c717b !important;
 		--color-gray-25: #6f6f6f !important;
 		--color-gray-30: #636363 !important;
 		--color-gray-35: #5a5a5a !important;
-		--color-gray-40: #4d5358 !important;
+		--color-gray-40: #50545c !important;
 		--color-gray-45: #454545 !important;
-		--color-gray-50: #343a3f !important;
+		--color-gray-50: #373d43 !important;
 		--color-gray-55: #2f2f2f !important;
-		--color-gray-60: #21272a !important;
+		--color-gray-60: #24282e !important;
 		--color-gray-65: #1f1f1f !important;
 		--color-gray-70: #1b1b1b !important;
 		--color-gray-75: #181818 !important;
-		--color-gray-80: #121619 !important;
+		--color-gray-80: #15171d !important;
 		--color-gray-85: #141414 !important;
 		--color-gray-90: #121212 !important;
 		--color-green-0:  #a7d5ae !important;
@@ -69,16 +69,16 @@
 		--color-green-70: #a7d5ae !important;
 		--color-green-80: #a7d5ae !important;
 		--color-green-90: #a7d5ae !important;
-		--color-orange-0:  #d09a63 !important;
-		--color-orange-10: #d09a63 !important;
-		--color-orange-20: #d09a63 !important;
-		--color-orange-30: #d09a63 !important;
-		--color-orange-40: #d09a63 !important;
-		--color-orange-50: #d09a63 !important;
-		--color-orange-60: #d09a63 !important;
-		--color-orange-70: #d09a63 !important;
-		--color-orange-80: #d09a63 !important;
-		--color-orange-90: #d09a63 !important;
+		--color-orange-0:  #ffb987 !important;
+		--color-orange-10: #ffb987 !important;
+		--color-orange-20: #ffb987 !important;
+		--color-orange-30: #ffb987 !important;
+		--color-orange-40: #ffb987 !important;
+		--color-orange-50: #ffb987 !important;
+		--color-orange-60: #ffb987 !important;
+		--color-orange-70: #ffb987 !important;
+		--color-orange-80: #ffb987 !important;
+		--color-orange-90: #ffb987 !important;
 		--color-pink-0:  #ffbad8 !important;
 		--color-pink-10: #ffbad8 !important;
 		--color-pink-20: #ffbad8 !important;
@@ -142,16 +142,16 @@
 	}
 
 	* {
-		--background-color-box:					#21272a !important;
-		--background-color-box-info:			#21272a !important;
-		--background-color-information:		    #343a3f !important;
-		--background-color-canvas:				#121619 !important;
-		--border-color:							#343a3f !important;
-		--border-color-deemphasized:			#343a3f !important;
-		--button-background-color-muted:		#343a3f !important;
-		--button-text-color-ghost-disabled:		#697077 !important;
+		--background-color-box:					#24282e !important;
+		--background-color-box-info:			#24282e !important;
+		--background-color-information:		    #373d43 !important;
+		--background-color-canvas:				#15171d !important;
+		--border-color:							#373d43 !important;
+		--border-color-deemphasized:			#373d43 !important;
+		--button-background-color-muted:		#373d43 !important;
+		--button-text-color-ghost-disabled:		#6c717b !important;
 		--button-border:						2px solid var(--border-color) !important;
-		--table-row-background-color-alternate:	#21272a !important;
+		--table-row-background-color-alternate:	#24282e !important;
 		--text-color-accent-primary-selected:	var(--text-color) !important;
 	}
 
