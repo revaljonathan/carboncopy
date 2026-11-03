@@ -4,7 +4,7 @@ M.bg                      = "#15171d"
 M.fg                      = "#d3dae6"
 
 M.primary                 = "#ffbad8"
-M.secondary               = "#82cfff"
+M.secondary               = "#94e0e0"
 M.tertiary                = "#cdb0ff"
 M.error                   = "#ff7d83"
 
@@ -26,7 +26,7 @@ M.telescope_selection_fg  = "#d3dae6"
 M.tree_folder             = "#94bdff"
 M.tree_folder_open        = "#cdb0ff"
 M.tree_indent_marker      = "#50545c"
-M.tree_root               = "#82cfff"
+M.tree_root               = "#94e0e0"
 
 M.branch                  = "#a7d5ae"
 
@@ -37,7 +37,7 @@ M.syn_type                = "#ffbad8"
 M.syn_constant            = "#ffb987"
 M.syn_comment             = "#6c717b"
 M.syn_variable            = "#d3dae6"
-M.syn_operator            = "#82cfff"
+M.syn_operator            = "#94e0e0"
 M.syn_special             = "#ffbad8"
 
 return M
