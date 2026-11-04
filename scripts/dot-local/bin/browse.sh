@@ -27,22 +27,22 @@ case "$CHOICE" in
     URL="${URL%"${URL##*[![:space:]]}"}"   
     [ -z "$URL" ] && exit 0
     if [[ "$URL" =~ ^[a-zA-Z][a-zA-Z0-9+.-]*:// ]]; then
-        helium-browser "$URL"
+        librewolf "$URL"
     elif [[ "$URL" =~ ^(localhost|[^[:space:]/]+\.[^[:space:]/]+)(:[0-9]+)?(/.*)?$ ]]; then
-        helium-browser "https://$URL"
+        librewolf "https://$URL"
     else
-        helium-browser "https://search.brave.com/search?q=$(urlencode "$URL")"
+        librewolf "https://search.brave.com/search?q=$(urlencode "$URL")"
     fi
     ;;
-*github*) helium-browser "https://github.com" ;;
-"Wikipedia"*) helium-browser "https://en.wikipedia.org/wiki/Main_Page" ;;
-"Youtube"*) helium-browser "https://www.youtube.com/" ;;
-"Reddit"*) helium-browser "https://www.reddit.com/" ;;
-"Arch Wiki"*) helium-browser "https://wiki.archlinux.org/title/Main_page" ;;
-"Deepseek"*) helium-browser "https://chat.deepseek.com/" ;;
-"GPT"*) helium-browser "https://chatgpt.com/" ;;
-"Claude"*) helium-browser "https://claude.ai/new" ;;
-"Gemini"*) helium-browser "https://gemini.google.com/app" ;;
-"Dodgers"*) helium-browser "https://search.brave.com/search?q=!g dodgers" ;;
-*) helium-browser "https://search.brave.com/search?q=$(urlencode "$CHOICE")" ;;
+*github*) librewolf "https://github.com" ;;
+"Wikipedia"*) librewolf "https://en.wikipedia.org/wiki/Main_Page" ;;
+"Youtube"*) librewolf "https://www.youtube.com/" ;;
+"Reddit"*) librewolf "https://www.reddit.com/" ;;
+"Arch Wiki"*) librewolf "https://wiki.archlinux.org/title/Main_page" ;;
+"Deepseek"*) librewolf "https://chat.deepseek.com/" ;;
+"GPT"*) librewolf "https://chatgpt.com/" ;;
+"Claude"*) librewolf "https://claude.ai/new" ;;
+"Gemini"*) librewolf "https://gemini.google.com/app" ;;
+"Dodgers"*) librewolf "https://search.brave.com/search?q=!g dodgers" ;;
+*) librewolf "https://search.brave.com/search?q=$(urlencode "$CHOICE")" ;;
 esac
