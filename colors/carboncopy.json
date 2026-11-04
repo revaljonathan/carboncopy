@@ -7,7 +7,9 @@
     "grey-2":    "#6c717b",
     "grey-3":    "#8a8e9a",
 
-    "white":     "#d3dae6",
+    "white-1":   "#b2bbca",
+    "white-2":   "#d3dae6",
+    "white-3":   "#f2f4f8",
 
     "pink":      "#ffbad8",
     "red":       "#ff7d83",
@@ -16,4 +18,32 @@
     "blue":      "#94bdff",
     "purple":    "#cdb0ff",
     "cyan":      "#94e0e0"
+},
+
+{
+    "background": [
+        "base":       "#15171d",
+        "surface":    "#24282e",
+        "surfaceVar": "#373d43"
+    ],
+    "border": [
+        "base":       "#50545c",
+        "surface":    "#6c717b"
+    ],
+    "text": [
+        "dim":        "#8a8e9a",
+        "subtext":    "#b2bbca",
+        "foreground": "#d3dae6",
+        "bright":     "#f2f4f8"
+    ],
+    "accent": [
+        "primary":    "#ffbad8",
+        "error":      "#ff7d83",
+        "success":    "#a7d5ae",
+        "warning":    "#ffb987",
+        "secondary":  "#94bdff",
+        "tertiary":   "#cdb0ff",
+        "special":    "#94e0e0"
+    ]
 }
+

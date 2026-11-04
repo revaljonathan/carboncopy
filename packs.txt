@@ -3,6 +3,8 @@ brightnessctl
 btop
 chafa
 cava
+rsync
+lazygit
 clang
 cliphist
 eza
