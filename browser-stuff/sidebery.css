@@ -1,13 +1,15 @@
+#root.root {--tabs-activated-fg: #ffbad8;}
+#root.root {--tabs-activated-bg: #24282e;}
 #root.root {--tabs-height: 32px;}
 #root.root {--tabs-inner-gap: 4px;}
 #root.root {--tabs-margin: 4px;}
-#root.root {--tabs-font: 14px sans-serif;}
-#root.root {--tabs-count-font: 14px sans-serif;}
+#root.root {--tabs-font: 14px IBM Plex Sans;}
+#root.root {--tabs-count-font: 14px IBM Plex Sans;}
 #root.root {--general-margin: 4px;}
 #root.root {--general-border-radius: 0px;}
 
 .Tab[data-active="true"] .body {
-	border: 2px solid #ffbad8	 !important;
+	border: 1px solid #50545c !important;
 	border-radius: 0px;
 }
 
