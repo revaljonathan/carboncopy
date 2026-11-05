@@ -1,30 +1,30 @@
 {
-    "black-1":   "#15171d",
-    "black-2":   "#24282e",
-    "black-3":   "#373d43",
+    "charcoal-1":   "#15171d",
+    "charcoal-2":   "#24282e",
+    "charcoal-3":   "#373d43",
 
-    "grey-1":    "#50545c",
-    "grey-2":    "#6c717b",
-    "grey-3":    "#8a8e9a",
+    "silver-1":     "#50545c",
+    "silver-2":     "#6c717b",
+    "silver-3":     "#8a8e9a",
 
-    "white-1":   "#b2bbca",
-    "white-2":   "#d3dae6",
-    "white-3":   "#f2f4f8",
+    "snow-1":       "#b2bbca",
+    "snow-2":       "#d3dae6",
+    "snow-3":       "#f2f4f8",
 
-    "pink":      "#ffbad8",
-    "red":       "#ff7d83",
-    "green":     "#a7d5ae",
-    "peach":     "#ffb987",
-    "blue":      "#94bdff",
-    "purple":    "#cdb0ff",
-    "cyan":      "#94e0e0"
+    "pink":         "#ffbad8",
+    "red":          "#ff7d83",
+    "green":        "#a7d5ae",
+    "peach":        "#ffb987",
+    "blue":         "#94bdff",
+    "purple":       "#cdb0ff",
+    "cyan":         "#94e0e0"
 },
 
 {
     "background": [
         "base":       "#15171d",
         "surface":    "#24282e",
-        "surfaceVar": "#373d43"
+        "elevated":   "#373d43"
     ],
     "border": [
         "base":       "#50545c",
@@ -38,11 +38,11 @@
     ],
     "accent": [
         "primary":    "#ffbad8",
-        "error":      "#ff7d83",
-        "success":    "#a7d5ae",
-        "warning":    "#ffb987",
         "secondary":  "#94bdff",
         "tertiary":   "#cdb0ff",
+        "error":      "#ff7d83",
+        "warning":    "#ffb987",
+        "success":    "#a7d5ae",
         "special":    "#94e0e0"
     ]
 }
