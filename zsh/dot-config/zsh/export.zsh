@@ -9,6 +9,7 @@ export MANPAGER="nvim +Man!"
 export FZF_DEFAULT_OPTS="
   --layout=reverse \
   --border=sharp \
+  --ansi \
   --no-separator \
   --color=base16,fg+:blue,bg+:black,border:bright-black,pointer:blue
 "

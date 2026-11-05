@@ -49,6 +49,10 @@ window#waybar {
     color: @primary;
 }
 
+#workspaces button.hover {
+    color: @primary;
+}
+
 #custom-sep {
     color: @outline2;
 }
