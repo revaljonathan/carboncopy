@@ -14,4 +14,15 @@
   min-width: 160px !important;
   width: 160px !important;
 }
+menupopup, panel {
+  --panel-background: #373d43 !important;
+  --panel-color: #d3dae6 !important;
+  --panel-border-radius: 8px !important;
+  --panel-border-color: #6c717b !important;
+}
 
+menuitem:hover,
+menu:where([_moz-menuactive="true"]:not([disabled="true"])) {
+  background-color: #50545c !important;
+  color: #f2f4f8 !important;
+}
