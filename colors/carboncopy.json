@@ -1,4 +1,5 @@
 {
+    "basalt":       "#07090d",
     "charcoal-1":   "#15171d",
     "charcoal-2":   "#24282e",
     "charcoal-3":   "#373d43",
@@ -19,6 +20,9 @@
     "purple":       "#cdb0ff",
     "cyan":         "#94e0e0",
 
+    "auxiliary": {
+        "scrim":      "#07090d"
+    },
     "background": {
         "base":       "#15171d",
         "surface":    "#24282e",
@@ -38,10 +42,12 @@
         "primary":    "#ffbad8",
         "secondary":  "#94bdff",
         "tertiary":   "#cdb0ff",
+        "special":    "#94e0e0"
+    },
+    "state": {
         "error":      "#ff7d83",
         "warning":    "#ffb987",
-        "success":    "#a7d5ae",
-        "special":    "#94e0e0"
+        "success":    "#a7d5ae"
     }
 }
 

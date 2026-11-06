@@ -10,7 +10,7 @@ cliphist list | fzf \
         case "$line" in
             "[[ binary data"*)
                 cliphist decode "$id" > /tmp/cliphist-preview
-                chafa --format=sixel --size="${FZF_PREVIEW_COLUMNS}x${FZF_PREVIEW_LINES}" /tmp/cliphist-preview
+                chafa --size="${FZF_PREVIEW_COLUMNS}x${FZF_PREVIEW_LINES}" /tmp/cliphist-preview
                 ;;
             *)
                 cliphist decode "$id" | head -c 3000

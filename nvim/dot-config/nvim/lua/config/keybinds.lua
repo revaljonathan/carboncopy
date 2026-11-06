@@ -101,4 +101,3 @@ vim.keymap.set("n", "<leader>cs", function()
     end
     vim.notify("Carboncopy colorscheme reloaded", vim.log.levels.INFO)
 end, { desc = "Reload Carboncopy colorscheme" })
-

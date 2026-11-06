@@ -11,8 +11,8 @@
 }
 
 tooltip {
-    background: @outline4;
-    border: 1px solid @outline2;
+    background: @charcoal2;
+    border: 1px solid @silver2;
 
 }
 
@@ -33,7 +33,7 @@ window#waybar {
 #workspaces button {
     margin: 0 0 2px 2px;
     background: transparent;
-    color: @outline2;
+    color: @silver1;
     transition: all 150ms ease;
 }
 
@@ -49,12 +49,12 @@ window#waybar {
     color: @primary;
 }
 
-#workspaces button.hover {
+#workspaces button:hover {
     color: @primary;
 }
 
 #custom-sep {
-    color: @outline2;
+    color: @silver1;
 }
 
 #clock,
@@ -74,12 +74,12 @@ window#waybar {
 }
 
 #mpris.paused {
-    color: @outline1;
-    background-color: @outline4;
+    color: @silver1;
+    background-color: @charcoal2;
 }
 
 #wireplumber.muted {
-    color: @outline2;
+    color: @silver2;
 }
 
 #wireplumber.microphone {
@@ -87,7 +87,7 @@ window#waybar {
 }
 
 #wireplumber.microphone.source-muted {
-    color: @outline2;
+    color: @silver2;
 }
 
 #custom-caf-waybar {
@@ -95,5 +95,5 @@ window#waybar {
 }
 
 #mpris {
-    background-color: @outline3;
+    background-color: @charcoal3;
 }
