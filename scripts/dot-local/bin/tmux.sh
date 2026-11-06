@@ -4,11 +4,6 @@ selected=$(tmux ls -F '#{session_name} (#{session_windows} windows)' 2>/dev/null
     | fuzzel --dmenu)
 
 [ -z "$selected" ] && exit 0
-session=$(echo "$selected" | awk '{print $1}')
-foot tmux attach -t "$session"
 
-[ -z "$selected" ] && exit 0
-
-session=$(echo "$selected" | cut -d: -f1)
-
+session=${selected% (*}   # strip the trailing " (N windows)"
 footclient tmux attach -t "$session"
