@@ -17,7 +17,7 @@
 menupopup, panel {
   --panel-background: #373d43 !important;
   --panel-color: #d3dae6 !important;
-  --panel-border-radius: 8px !important;
+  --panel-border-radius: 0px !important;
   --panel-border-color: #6c717b !important;
 }
 
