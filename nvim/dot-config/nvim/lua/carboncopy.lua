@@ -5,7 +5,7 @@ M.fg                      = "#d3dae6"
 
 M.primary                 = "#ffbad8"
 M.secondary               = "#94e0e0"
-M.tertiary                = "#cdb0ff"
+M.tertiary                = "#d5bdff"
 M.error                   = "#ff7d83"
 
 M.cursorline_bg           = "#373d43"
@@ -24,13 +24,13 @@ M.telescope_selection_bg  = "#373d43"
 M.telescope_selection_fg  = "#d3dae6"
 
 M.tree_folder             = "#94bdff"
-M.tree_folder_open        = "#cdb0ff"
+M.tree_folder_open        = "#d5bdff"
 M.tree_indent_marker      = "#50545c"
 M.tree_root               = "#94e0e0"
 
 M.branch                  = "#a7d5ae"
 
-M.syn_keyword             = "#cdb0ff"
+M.syn_keyword             = "#d5bdff"
 M.syn_func                = "#94bdff"
 M.syn_string              = "#a7d5ae"
 M.syn_type                = "#ffbad8"

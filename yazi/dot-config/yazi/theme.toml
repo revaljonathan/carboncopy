@@ -155,7 +155,7 @@ conds = [
 ]
 
 files = [
-  { name = "kritadisplayrc", text = "", fg = "#cdb0ff" },
+  { name = "kritadisplayrc", text = "", fg = "#d5bdff" },
   { name = ".gtkrc-2.0", text = "", fg = "#ffbad8" },
   { name = "bspwmrc", text = "", fg = "#24282e" },
   { name = "webpack", text = "󰜫", fg = "#94e0e0" },
@@ -285,7 +285,7 @@ files = [
   { name = "makefile", text = "", fg = "#6c717b" },
   { name = "gulpfile.js", text = "", fg = "#ff7d83" },
   { name = "lxde-rc.xml", text = "", fg = "#6c717b" },
-  { name = "kritarc", text = "", fg = "#cdb0ff" },
+  { name = "kritarc", text = "", fg = "#d5bdff" },
   { name = "gtkrc", text = "", fg = "#ffbad8" },
   { name = "ionic.config.json", text = "", fg = "#94bdff" },
   { name = ".prettierrc.mjs", text = "", fg = "#94bdff" },
@@ -335,7 +335,7 @@ files = [
 exts = [
   { name = "otf", text = "", fg = "#ffbad8" },
   { name = "import", text = "", fg = "#ffbad8" },
-  { name = "krz", text = "", fg = "#cdb0ff" },
+  { name = "krz", text = "", fg = "#d5bdff" },
   { name = "adb", text = "", fg = "#94e0e0" },
   { name = "ttf", text = "", fg = "#ffbad8" },
   { name = "webpack", text = "󰜫", fg = "#94e0e0" },
@@ -378,7 +378,7 @@ exts = [
   { name = "3gp", text = "", fg = "#ffb987" },
   { name = "pxi", text = "", fg = "#94bdff" },
   { name = "flac", text = "", fg = "#50545c" },
-  { name = "gpr", text = "", fg = "#cdb0ff" },
+  { name = "gpr", text = "", fg = "#d5bdff" },
   { name = "huff", text = "󰡘", fg = "#50545c" },
   { name = "json", text = "", fg = "#ffb987" },
   { name = "gv", text = "󱁉", fg = "#50545c" },
@@ -401,7 +401,7 @@ exts = [
   { name = "applescript", text = "", fg = "#6c717b" },
   { name = "elm", text = "", fg = "#94e0e0" },
   { name = "ebook", text = "", fg = "#ffb987" },
-  { name = "kra", text = "", fg = "#cdb0ff" },
+  { name = "kra", text = "", fg = "#d5bdff" },
   { name = "tf", text = "", fg = "#50545c" },
   { name = "xls", text = "󰈛", fg = "#50545c" },
   { name = "fnl", text = "", fg = "#ffb987" },
@@ -420,7 +420,7 @@ exts = [
   { name = "epp", text = "", fg = "#ffb987" },
   { name = "app", text = "", fg = "#373d43" },
   { name = "dot", text = "󱁉", fg = "#50545c" },
-  { name = "kpp", text = "", fg = "#cdb0ff" },
+  { name = "kpp", text = "", fg = "#d5bdff" },
   { name = "eot", text = "", fg = "#ffbad8" },
   { name = "hpp", text = "", fg = "#6c717b" },
   { name = "spec.tsx", text = "", fg = "#50545c" },

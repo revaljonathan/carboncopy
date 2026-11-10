@@ -17,7 +17,7 @@
     "green":        "#a7d5ae",
     "peach":        "#ffb987",
     "blue":         "#94bdff",
-    "purple":       "#cdb0ff",
+    "purple":       "#d5bdff",
     "cyan":         "#94e0e0",
 
     "auxiliary": {
@@ -41,7 +41,7 @@
     "accent": {
         "primary":    "#ffbad8",
         "secondary":  "#94bdff",
-        "tertiary":   "#cdb0ff",
+        "tertiary":   "#d5bdff",
         "special":    "#94e0e0"
     },
     "state": {
