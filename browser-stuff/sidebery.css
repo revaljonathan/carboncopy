@@ -1,4 +1,4 @@
-#root.root {--tabs-activated-fg: #ffbad8;}
+#root.root {--tabs-activated-fg: #fcbdd8;}
 #root.root {--tabs-activated-bg: #24282e;}
 #root.root {--tabs-height: 32px;}
 #root.root {--tabs-inner-gap: 4px;}
@@ -22,5 +22,5 @@
 }
 
 .NavigationBar .nav-item[data-active="true"] {
-	border: 1px solid #ffbad8 !important;
+	border: 1px solid #fcbdd8 !important;
 }

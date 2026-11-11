@@ -13,8 +13,8 @@ configuration {
 * {
     base:     #15171d;
     text:     #d3dae6;
-    primary: #ffbad8;
-    border: #373d43;
+    primary: #fcbdd8;
+    border: #343a40;
     outline: #50545c;
 
     separatorcolor: transparent;
