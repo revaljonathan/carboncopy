@@ -36,11 +36,11 @@ start_caffed() {
     stop_idle
     echo "caffed" > "$STATE_FILE"
     setsid -f swayidle -w \
-        timeout 450 'brightnessctl -s set 5%' \
+        timeout 240 'brightnessctl -s set 5%' \
         resume 'brightnessctl -r' \
-        timeout 900 'niri msg action power-off-monitors' \
+        timeout 450 'niri msg action power-off-monitors' \
         resume 'niri msg action power-on-monitors' \
-        timeout 1200 "$LOCKER" \
+        timeout 600 "$LOCKER" \
         before-sleep "$LOCKER" \
         </dev/null >/dev/null 2>&1
     notify_ui

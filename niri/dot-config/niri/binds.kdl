@@ -17,7 +17,6 @@ binds {
     super+t { spawn-sh "~/.local/bin/tmux.sh"; }
     super+Return { spawn "footclient"; }
 
-    // === Launchers, Menus & Custom Scripts ===
     super+n { spawn-sh "footclient -e yazi ~/Documents/note"; }
     super+Shift+S { spawn "~/.local/bin/caf.sh"; }
 

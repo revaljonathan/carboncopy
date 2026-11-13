@@ -1,5 +1,5 @@
 {
-    "basalt":       "#07090d",
+    "basalt":       "#0e0f13",
     "charcoal-1":   "#15171d",
     "charcoal-2":   "#24282e",
     "charcoal-3":   "#343a40",
@@ -21,7 +21,7 @@
     "cyan":         "#94e0e0",
 
     "auxiliary": {
-        "scrim":      "#07090d"
+        "scrim":      "#0e0f13"
     },
     "background": {
         "base":       "#15171d",
