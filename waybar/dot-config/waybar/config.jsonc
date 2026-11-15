@@ -39,6 +39,7 @@
 
 "custom/caf-waybar": {
     "exec": "~/.local/bin/caf.sh status",
+    "on-click": "~/.local/bin/caf.sh",
     "signal": 13,
     "format": "{}",
     "interval": 900,
