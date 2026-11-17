@@ -1,4 +1,10 @@
 # fastfetch -c ~/.config/fastfetch/min.jsonc
+
+# colagen experiment
+# if [[ $- == *i* ]] && [ -t 1 ]; then
+#     [ -f ~/.cache/colagen/sequences ] && cat ~/.cache/colagen/sequences
+# fi
+
 eval "$(zoxide init zsh)"
 f() { eval $(thefuck $(fc -ln -1)); }
 

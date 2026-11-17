@@ -1,0 +1,104 @@
+@import "colors.css";
+
+* {
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    font-weight: 400;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+tooltip {
+    background: @surface;
+    border: 1px solid @border_surface;
+
+}
+
+tooltip label {
+    font-family: "carbonsevka", monospace;
+    color: @text_main;
+}
+
+window#waybar {
+    background: @base;
+    color: @text_main;
+}
+
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces button {
+    margin: 0 2px;
+    padding: 1 4px;
+    min-width: 0;
+    background: transparent;
+    color: @border_base;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 150ms ease;
+}
+
+#workspaces button.focused {
+    border-bottom-color: @primary;
+    color: @primary;
+}
+
+#workspaces button:not(.empty):not(.focused) {
+    color: @primary;
+}
+
+#workspaces button:hover {
+    color: @primary;
+    background: transparent;
+}
+
+#custom-sep {
+    color: @border_base;
+}
+
+#clock,
+#battery,
+#wireplumber,
+#backlight,
+#memory,
+#window,
+#custom-weather,
+#temperature,
+#network,
+#custom-caf-waybar,
+#tray,
+#mpris     {
+    color: @text_main;
+    padding: 0 4px;
+}
+
+#mpris.paused {
+    color: @border_base;
+    background-color: @surface;
+}
+
+#wireplumber.muted {
+    color: @border_surface;
+}
+
+#wireplumber.microphone {
+    color: @text_main;
+}
+
+#wireplumber.microphone.source-muted {
+    color: @border_surface;
+}
+
+#custom-caf-waybar {
+    margin-right: 8px;
+}
+
+#mpris {
+    background-color: @elevated;
+}

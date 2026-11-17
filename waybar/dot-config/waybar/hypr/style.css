@@ -12,19 +12,19 @@
 }
 
 tooltip {
-    background: @charcoal2;
-    border: 1px solid @silver2;
+    background: @surface;
+    border: 1px solid @border_surface;
 
 }
 
 tooltip label {
     font-family: "carbonsevka", monospace;
-    color: @fg;
+    color: @text_main;
 }
 
 window#waybar {
     background: @base;
-    color: @fg;
+    color: @text_main;
 }
 
 #workspaces {
@@ -36,7 +36,7 @@ window#waybar {
     padding: 1 4px;
     min-width: 0;
     background: transparent;
-    color: @silver1;
+    color: @border_base;
     border: none;
     border-bottom: 2px solid transparent;
     border-radius: 0;
@@ -44,12 +44,13 @@ window#waybar {
     transition: all 150ms ease;
 }
 
+#workspaces button.active,
 #workspaces button.focused {
     border-bottom-color: @primary;
     color: @primary;
 }
 
-#workspaces button:not(.empty):not(.focused) {
+#workspaces button:not(.empty):not(.active):not(.focused) {
     color: @primary;
 }
 
@@ -59,7 +60,7 @@ window#waybar {
 }
 
 #custom-sep {
-    color: @silver1;
+    color: @border_base;
 }
 
 #clock,
@@ -74,25 +75,25 @@ window#waybar {
 #custom-caf-waybar,
 #tray,
 #mpris     {
-    color: @fg;
+    color: @text_main;
     padding: 0 4px;
 }
 
 #mpris.paused {
-    color: @silver1;
-    background-color: @charcoal2;
+    color: @border_base;
+    background-color: @surface;
 }
 
 #wireplumber.muted {
-    color: @silver2;
+    color: @border_surface;
 }
 
 #wireplumber.microphone {
-    color: @fg;
+    color: @text_main;
 }
 
 #wireplumber.microphone.source-muted {
-    color: @silver2;
+    color: @border_surface;
 }
 
 #custom-caf-waybar {
@@ -100,5 +101,5 @@ window#waybar {
 }
 
 #mpris {
-    background-color: @charcoal3;
+    background-color: @elevated;
 }

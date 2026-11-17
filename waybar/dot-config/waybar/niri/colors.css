@@ -1,0 +1,19 @@
+/* carboncopy 🐣 */
+@define-color base #15171d;
+@define-color surface #24282e;
+@define-color elevated #343a40;
+@define-color border_base #50545c;
+@define-color border_surface #6c717b;
+
+@define-color text_dim #8e8e9a;
+@define-color text_sub #b2bbca;
+@define-color text_main #d3dae6;
+@define-color text_bright #f2f4f8;
+
+@define-color primary #fcbdd8;
+@define-color secondary #99befa;
+@define-color tertiary #d5bdff;
+@define-color error #f88389;
+@define-color warning #f9ba8d;
+@define-color success #a7d5ae;
+@define-color special #94e0e0;
