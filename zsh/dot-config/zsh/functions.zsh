@@ -1,17 +1,27 @@
-# gacp() {
-#   if [ -z "$1" ]; then
-#     echo "pls comment bro"
-#     return 1
-#   fi
-#   git add .
-#   git commit -m "$1"
-#   git push
-# }
+gacp() {
+  if [ -z "$1" ]; then
+    echo "pls comment bro"
+    return 1
+  fi
+  git add .
+  git commit -m "$1"
+  git push
+}
 
 fuck() { doas $(fc -ln -1) }
 
 take() {
   mkdir -p "$1" && cd "$1"
+}
+
+cow() {
+    if [[ -z "$1" ]]; then
+        echo "Usage: cow <file.c> [extra flags]"
+        return 1
+    fi
+
+    local output="${1%.c}"
+    clang -Wall -Wextra -Werror -pedantic -pipe -O2 -march=native "$1" "${@:2}" -o "$output"
 }
 
 extract() {
@@ -57,11 +67,6 @@ gf () {
   done
 }
 
-# pokemon=(mudkip kyogre xerneas yveltal lunala marshadow rowlet zamazenta miraidon kingambit basculegion falinks pikachu empoleon corviknight gastrodon excadrill armarouge)
-# index=$((RANDOM % ${#pokemon[@]} + 1))
-# name=${pokemon[$index]}
-# krabby name "$name" | sed '1d'
-
 arch_news_check() {
     echo "🔔 Latest Arch Linux news:"
     curl -s https://archlinux.org/news/ \
@@ -83,5 +88,3 @@ done
 weather() {
   curl wttr.in/"$1"
 }
-
-
