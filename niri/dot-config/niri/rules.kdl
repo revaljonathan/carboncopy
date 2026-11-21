@@ -13,10 +13,10 @@ window-rule {
 }
 
 blur {
-    passes 2
-    offset 6
+    passes 3
+    offset 7
     noise 0.013
-    saturation 1.3
+    saturation 1.6
 }
 
 window-rule {
@@ -47,8 +47,8 @@ window-rule {
 window-rule {
     match app-id="clip|imv|xdg-desktop-portal-gtk"
     open-floating true
-    default-column-width { fixed 1129; }
-    default-window-height { fixed 635; }
+    default-column-width { fixed 960; }
+    default-window-height { fixed 720; }
 }
 
 layer-rule {

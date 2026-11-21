@@ -22,7 +22,7 @@ capital-c = "serifless"
 capital-d = "standard-serifless"
 capital-e = "serifless"
 capital-f = "serifless"
-capital-g = "toothed-serifless-hooked"
+capital-g = "toothless-rounded-serifless-hooked"
 capital-h = "serifless"
 capital-i = "serifed"
 capital-j = "serifed"
@@ -57,7 +57,7 @@ m = "serifless"
 n = "straight-serifless"
 p = "eared-serifless"
 q = "straight-serifless"
-r = "serifless"
+r = "hookless-serifless"
 s = "serifless"
 t = "flat-hook-short-neck"
 u = "toothless-rounded-serifless"
@@ -108,7 +108,7 @@ capital-c = "serifless"
 capital-d = "standard-serifless"
 capital-e = "serifless"
 capital-f = "serifless"
-capital-g = "toothed-serifless-hooked"
+capital-g = "toothless-rounded-serifless-hooked"
 capital-h = "serifless"
 capital-i = "serifed"
 capital-j = "serifed"
@@ -143,7 +143,7 @@ m = "serifless"
 n = "tailed-serifless"
 p = "eared-serifless"
 q = "tailed-serifless"
-r = "serifless"
+r = "hookless-serifless"
 s = "serifless"
 t = "diagonal-tailed-short-neck2"
 u = "tailed-serifless"
@@ -187,6 +187,16 @@ css = 400
 shape = 700
 menu = 700
 css = 700
+
+[buildPlans.Carbonsevka.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+[buildPlans.Carbonsevka.widths.SemiExtended]
+shape = 548
+menu = 6
+css = "semi-expanded"
 
 [buildPlans.Carbonsevka.slopes.Upright]
 angle = 0
