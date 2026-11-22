@@ -330,7 +330,7 @@
   typeset -g POWERLEVEL9K_DIR_CLASSES=()
 
   # Custom prefix.
-  typeset -g POWERLEVEL9K_DIR_PREFIX='%F{8}| %f'
+  # typeset -g POWERLEVEL9K_DIR_PREFIX='%F{8}| %f'
 
   #####################################[ vcs: git status ]######################################
   # Branch icon. Set this parameter to '\UE0A0 ' for the popular Powerline branch icon.
@@ -908,6 +908,7 @@
   # typeset -g POWERLEVEL9K_CONTEXT_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
   typeset -g POWERLEVEL9K_CONTEXT_PREFIX='%f'
+  typeset -g POWERLEVEL9K_CONTEXT_SUFFIX='%F{8} |%f'
 
   ###[ virtualenv: python virtual environment (https://docs.python.org/3/library/venv.html) ]###
   # Python virtual environment color.
