@@ -8,3 +8,4 @@ fi
 
 # just in case, lol, p10k is still better
 # eval "$(starship init zsh)"
+# eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/steal.toml)"
