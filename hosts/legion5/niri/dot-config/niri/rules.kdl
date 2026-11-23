@@ -1,0 +1,184 @@
+recent-windows {
+    binds {
+        Mod+Tab         { next-window  scope="workspace"; }
+        Mod+Shift+Tab   { previous-window scope="workspace"; }
+    }
+}
+
+window-rule {
+    draw-border-with-background false
+}
+
+blur {
+    passes 2
+    offset 7
+    noise 0.013
+    saturation 1.6
+}
+
+window-rule {
+  match title="Brave"
+  open-on-workspace "3"
+  open-maximized true
+}
+
+window-rule {
+  match app-id="[ll]ibrewolf"
+  open-maximized true
+}
+
+window-rule {
+    match app-id="[Ss]team"
+    open-floating false
+}
+
+
+window-rule {
+    match title="[Aa]rknights"
+    open-floating false
+    open-fullscreen true
+}
+
+window-rule {
+  match title="Helium"
+  open-maximized true
+}
+
+
+window-rule {
+  match title="LimbusCompany"
+  open-maximized true
+}
+
+window-rule {
+    match app-id="[Vv]esktop"
+    open-floating false
+    background-effect {
+        blur true
+    } 
+    popups {
+        geometry-corner-radius 0
+        background-effect {
+            blur true
+        }
+    }
+
+}
+window-rule {
+    match app-id="imv$"
+    open-floating true
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 700; }
+}
+
+layer-rule {
+    match namespace="qs-bar|qs-vert-bar"
+    background-effect {
+        blur false
+    } 
+}
+
+layer-rule {
+    match namespace="qs-master|qs-calculator|qs-dashboard|qs-monitor|qs-emoji|qs-browse|qs-wall|qs-clipboard|qs-launcher"
+    background-effect {
+        blur true
+        xray false
+    } 
+}
+
+window-rule {
+    match app-id="xdg-desktop-portal-gnome"
+    background-effect {
+        blur true
+    }
+}
+window-rule {
+    match app-id="kitty"
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+    match app-id="nwg-look"
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+    match app-id="midfloat$"
+    open-floating true
+    default-column-width { fixed 1300; }
+    default-window-height { fixed 950; }
+}
+window-rule {
+    match app-id="xdg-desktop-portal-gtk"
+    background-effect {
+        blur true
+    }
+    popups {
+        geometry-corner-radius 0
+        background-effect {
+            blur true
+        }
+    }
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 700; }
+    open-floating true
+}
+
+window-rule {
+    match app-id="[Nn]autilus"
+    background-effect {
+        blur true
+    }
+    popups {
+        geometry-corner-radius 0
+        background-effect {
+            blur true
+        }
+    }
+}
+
+window-rule {
+    match app-id="[Tt]hunar"
+    background-effect {
+        blur true
+    }
+    popups {
+        geometry-corner-radius 0
+        background-effect {
+            blur true
+        }
+    }
+}
+window-rule {
+  match title="New Tab - Helium"
+  opacity 0.90
+  background-effect {
+      blur true
+  }
+}
+
+window-rule {
+  match app-id="localsend"
+  opacity 0.88
+  background-effect {
+      blur true
+  }
+}
+window-rule {
+  match app-id="[Ss]potify$"
+  opacity 0.90
+  open-maximized true
+  open-on-workspace "4"
+  background-effect {
+      blur true
+  }
+}
+
+layer-rule {
+    match namespace="^awww-daemon$"
+    place-within-backdrop true
+}

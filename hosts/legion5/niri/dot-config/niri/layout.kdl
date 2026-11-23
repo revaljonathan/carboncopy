@@ -1,0 +1,159 @@
+prefer-no-csd
+
+// this is a commentz
+
+overview {
+    zoom 0.3
+    workspace-shadow {
+        softness 15
+        spread 1
+        offset x=0 y=0
+        color "#131313"
+    }
+    backdrop-color "#1e1e2e00";
+}
+
+cursor {
+    xcursor-theme "Bibata-Material-Noir-Light"
+    xcursor-size 26 
+}
+
+layout {
+    gaps 6
+    background-color "transparent"
+
+    center-focused-column "never"
+
+       preset-column-widths {
+        proportion 0.25
+        proportion 0.5
+        proportion 0.75
+    }
+       preset-window-heights {
+        proportion 0.25
+        proportion 0.5
+        proportion 0.75
+        proportion 1.0
+    }
+       default-column-width { proportion 0.5; }
+       focus-ring {
+          off
+          width 2
+        }
+        border {
+        on 
+        width 2
+        }
+    shadow {
+        on
+           softness 40
+           spread 4
+           offset x=0 y=0
+          }
+}
+
+animations {
+    on
+
+    workspace-switch {
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
+    }
+
+ window-open {
+        duration-ms 260
+        curve "cubic-bezier" 0.22 1.0 0.36 1.0
+
+        // credit: https://github.com/jgarza9788/niri-animation-collection
+        custom-shader r"
+            vec4 open_color(vec3 coords_geo, vec3 size_geo) {
+                float p = niri_clamped_progress;
+
+                float slide_px = (1.0 - p) * 60.0;
+                float slide_geo = slide_px / max(size_geo.x, 1.0);
+                float scale = 0.985 + 0.015 * p;
+
+                vec2 uv = coords_geo.xy;
+                uv -= vec2(0.5, 0.5);
+                uv /= scale;
+                uv += vec2(0.5, 0.5);
+
+                uv.y -= slide_geo;
+
+                vec3 coords_tex = niri_geo_to_tex * vec3(uv, 1.0);
+                vec4 color = texture2D(niri_tex, coords_tex.st);
+
+                color *= p;
+
+                return color;
+            }
+        "
+    }
+
+    window-close {
+        duration-ms 180
+        curve "cubic-bezier" 0.32 0.0 0.67 0.0
+
+        custom-shader r"
+            vec4 close_color(vec3 coords_geo, vec3 size_geo) {
+                float p = niri_clamped_progress;
+                float inv = 1.0 - p;
+
+                float slide_px = p * 40.0;
+                float slide_geo = slide_px / max(size_geo.x, 1.0);
+
+                float scale = 1.0 - 0.012 * p;
+
+                vec2 uv = coords_geo.xy;
+                uv -= vec2(0.5, 0.5);
+                uv /= scale;
+                uv += vec2(0.5, 0.5);
+
+                uv.y -= slide_geo;
+
+                vec3 coords_tex = niri_geo_to_tex * vec3(uv, 1.0);
+                vec4 color = texture2D(niri_tex, coords_tex.st);
+
+                color *= inv;
+                return color;
+            }
+        "
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=1.0 stiffness=700 epsilon=0.0001
+    }
+
+    window-movement {
+        spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+    }
+
+    window-resize {
+        custom-shader r"
+            vec4 resize_color(vec3 coords_curr_geo, vec3 size_curr_geo) {
+                vec3 coords_tex_next = niri_geo_to_tex_next * coords_curr_geo;
+                vec4 color = texture2D(niri_tex_next, coords_tex_next.st);
+                return color;
+            }
+        "
+    }
+    config-notification-open-close {
+        spring damping-ratio=0.6 stiffness=1000 epsilon=0.001
+    }
+
+    exit-confirmation-open-close {
+        spring damping-ratio=0.6 stiffness=500 epsilon=0.01
+    }
+
+    screenshot-ui-open {
+        duration-ms 200
+        curve "ease-out-quad"
+    }
+
+    overview-open-close {
+        spring damping-ratio=1.0 stiffness=700 epsilon=0.0001
+    }
+
+    recent-windows-close {
+        spring damping-ratio=1.0 stiffness=700 epsilon=0.001
+    }
+}

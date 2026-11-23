@@ -1,0 +1,16 @@
+workspace "1" { }
+workspace "2" { }
+workspace "3" { }
+workspace "4" { }
+workspace "5" { }
+workspace "6" { }
+workspace "7" { }
+workspace "8" { }
+
+output "eDP-1" {
+    mode "1920x1200@165.000"
+    scale 1
+    transform "normal"
+    variable-refresh-rate
+    position x=0 y=0
+}
