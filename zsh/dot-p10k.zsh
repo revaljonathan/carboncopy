@@ -7,11 +7,8 @@
 () {
   emulate -L zsh -o extended_glob
 
-  # Unset all configuration options. This allows you to apply configuration changes without
-  # restarting zsh. Edit ~/.p10k.zsh and type `source ~/.p10k.zsh`.
   unset -m '(POWERLEVEL9K_*|DEFAULT_USER)~POWERLEVEL9K_GITSTATUS_DIR'
 
-  # Zsh >= 5.1 is required.
   [[ $ZSH_VERSION == (5.<1->*|<6->.*) ]] || return
 
   # The list of segments shown on the left. Fill it with the most important segments.
@@ -1624,7 +1621,7 @@
   # Current time color.
   typeset -g POWERLEVEL9K_TIME_FOREGROUND=6
   # Format for the current time: 09:51:02. See `man 3 strftime`.
-  typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S}'
+  typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
   # If set to true, time will update when you hit enter. This way prompts for the past
   # commands will contain the start times of their commands as opposed to the default
   # behavior where they contain the end times of their preceding commands.

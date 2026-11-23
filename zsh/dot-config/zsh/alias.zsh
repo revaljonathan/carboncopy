@@ -68,7 +68,10 @@ alias oc='opencode'
 alias pobs='__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia obs & disown'
 alias ppd=powerprofilesctl
 
-
+alias tma='tmux attach -t'
+alias tmn='tmux new -s'
+alias tml='tmux list-sessions'
+alias tmk='tmux kill-session -t'
 
 alias gpl='git pull'
 alias tss='tailscale serve'

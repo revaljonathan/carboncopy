@@ -21,7 +21,7 @@ cow() {
     fi
 
     local output="${1%.c}"
-    clang -Wall -Wextra -Werror -pedantic -pipe -O2 -march=native "$1" "${@:2}" -o "$output"
+    clang -Wall -Wextra -flto -pedantic -pipe -O2 -march=native "$1" "${@:2}" -o "$output"
 }
 
 extract() {
