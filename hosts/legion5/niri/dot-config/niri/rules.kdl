@@ -3,6 +3,10 @@ recent-windows {
         Mod+Tab         { next-window  scope="workspace"; }
         Mod+Shift+Tab   { previous-window scope="workspace"; }
     }
+    previews {
+        max-height 400
+        max-scale 0.75
+      }
 }
 
 window-rule {

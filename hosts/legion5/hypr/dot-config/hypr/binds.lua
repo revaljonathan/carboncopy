@@ -1,5 +1,4 @@
-local terminal = "footclient"
-local menu     = "fuzzel"
+local terminal = "kitty"
 local mainMod  = "SUPER"
 
 hl.bind("SUPER + Tab", function()
@@ -15,16 +14,26 @@ hl.bind("SUPER + w", function()
 end)
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("footclient --class=clip ~/.local/bin/clip.sh"))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("pkill -sigusr1 waybar"))
-hl.bind(mainMod .. " + E",
-    hl.dsp.exec_cmd("rofimoji --selector fuzzel --prompt \"> \" --action copy --skin-tone neutral"))
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("~/.local/bin/power.sh"))
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("footclient --class=clip ~/.local/bin/wall.sh"))
-hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("~/.local/bin/browse.sh"))
+
+-- quickshell panels (mirrored from niri)
+hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("quickshell ipc call launcher toggle"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("quickshell ipc call clipboard toggle"))
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd("quickshell ipc call master toggle"))
+hl.bind(mainMod .. " + SHIFT + F23",
+    hl.dsp.exec_cmd("pkill quickshell; QS_NO_RELOAD_POPUP=1 quickshell --daemonize"))
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("quickshell ipc call dashboard toggle"))
+hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd("quickshell ipc call lockscreen lock"))
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("quickshell ipc call calculator toggle"))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("quickshell ipc call emoji toggle"))
+hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd("quickshell ipc call notifications dnd_toggle"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("quickshell ipc call browse toggle"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("quickshell ipc call powermenu toggle"))
+hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("quickshell ipc call monitor toggle"))
+hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("quickshell ipc call wall toggle"))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("quickshell ipc call bar toggleOrientation"))
+
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("~/.local/bin/tmux.sh"))
-hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("footclient -e yazi ~/Documents/note"))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("kitty -e yazi ~/Documents/note"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("~/.local/bin/caf.sh"))
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())

@@ -18,7 +18,6 @@ hl.window_rule({
 
     no_focus = true,
 })
-
 hl.window_rule({
     name = "librewolf_full_width",
     match = { class = "librewolf" },
