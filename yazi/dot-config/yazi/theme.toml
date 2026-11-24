@@ -10,10 +10,10 @@ count_copied    = { fg = "black", bg = "green" }
 count_cut       = { fg = "black", bg = "red" }
 count_selected  = { fg = "black", bg = "yellow" }
 border_symbol   = "│"
-border_style    = { fg = "bright-black" }
+border_style    = { fg = "black" }
 
 [tabs]
-active   = { fg = "200", bg = "bright-black", bold = true }
+active   = { fg = "green", bg = "black", bold = true }
 inactive = { fg = "bright-black", bg = "black" }
 padding = { open = "██", close = "" }
 sep_inner = { open = "", close = "" }
