@@ -90,6 +90,7 @@
         "critical-threshold": 80,
         "format": "CPU: {temperatureC}°C",
         "interval": 90,
+        "on-click": "footclient --class=clip btop",
         "tooltip": false
     },
 
