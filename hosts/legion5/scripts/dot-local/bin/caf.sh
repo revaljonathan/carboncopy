@@ -2,7 +2,7 @@
 set -euo pipefail
 
 STATE_FILE="${XDG_RUNTIME_DIR:-/tmp}/caffeine.state"
-LOCKER="$HOME/.local/bin/dynalock.sh"
+LOCKER="quickshell ipc call lockscreen lock"
 
 stop_idle() {
     if pgrep -x swayidle >/dev/null 2>&1; then
