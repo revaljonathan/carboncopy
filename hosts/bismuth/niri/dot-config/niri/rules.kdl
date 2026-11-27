@@ -128,7 +128,23 @@ window-rule {
         }
     }
     default-column-width { fixed 1000; }
-    default-window-height { fixed 700; }
+    default-window-height { fixed 1000; }
+    open-floating true
+}
+
+window-rule {
+    match app-id="dev.noctalia.luciole-chooser"
+    background-effect {
+        blur true
+    }
+    popups {
+        geometry-corner-radius 0
+        background-effect {
+            blur true
+        }
+    }
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 800; }
     open-floating true
 }
 
