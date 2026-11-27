@@ -50,7 +50,21 @@ window-rule {
     default-column-width { fixed 960; }
     default-window-height { fixed 720; }
 }
-
+window-rule {
+    match app-id="dev.noctalia.luciole-chooser"
+    background-effect {
+        blur true
+    }
+    popups {
+        geometry-corner-radius 0
+        background-effect {
+            blur true
+        }
+    }
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 800; }
+    open-floating true
+}
 layer-rule {
     match namespace="^wallpaper$"
     place-within-backdrop true
