@@ -1,8 +1,9 @@
 cava/dot-config/cava/shaders/
 
 # matugen-generated colors (rewritten on every matugen run)
-hosts/legion5/btop/dot-config/btop/themes/matugen.theme
-hosts/legion5/kitty/dot-config/kitty/colors.conf
-hosts/legion5/niri/dot-config/niri/colors.kdl
-hosts/legion5/zathura/dot-config/zathura/zathurarc
+hosts/bismuth/btop/dot-config/btop/themes/matugen.theme
+hosts/bismuth/kitty/dot-config/kitty/colors.conf
+hosts/bismuth/niri/dot-config/niri/colors.kdl
+hosts/bismuth/zathura/dot-config/zathura/zathurarc
+common/cava/dot-config/cava/themes/matugen
 tmux/dot-config/tmux/tmux-colors.conf

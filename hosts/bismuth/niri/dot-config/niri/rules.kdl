@@ -144,6 +144,18 @@ window-rule {
         }
     }
 }
+window-rule {
+    match app-id="[Ll]uciole"
+    background-effect {
+        blur true
+    }
+    popups {
+        geometry-corner-radius 0
+        background-effect {
+            blur true
+        }
+    }
+}
 
 window-rule {
     match app-id="[Tt]hunar"
