@@ -78,7 +78,7 @@ window-rule {
 layer-rule {
     match namespace="qs-bar|qs-vert-bar"
     background-effect {
-        blur false
+        blur true
     } 
 }
 
