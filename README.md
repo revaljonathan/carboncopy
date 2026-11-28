@@ -12,6 +12,7 @@ hosts:
 ```bash 
 stow --dotfiles -t ~ --no-folding scripts
 ```
+
 3. anything else
 ```bash 
 stow --dotfiles -t ~ mycoolapp
